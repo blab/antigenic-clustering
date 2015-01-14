@@ -1,0 +1,1 @@
+## BEAST XML for clustered cartographic model
