@@ -1125,17 +1125,19 @@ residual obsoleted parameters - to be deleted along with the next batch of code 
 		<log id="muLog" logEvery="200000" fileName="H1N1_mds.muStat.log">
 			<statistic idref="muStatistic"/>
 		</log>
+		<!-- I am now not scaling the mus, so this become obsolete.
 		<log id="DriftedMuLog" logEvery="200000" fileName="H1N1_mds.drifted.Mu.log">
 			<statistic idref="DriftedMuStatistic"/>
 		</log>
-		
-		<log id="fileLog9" logEvery="200000" fileName="H1N1_mds.undriftVirus.log">		
+		-->
+		<log id="fileLog9" logEvery="200000" fileName="H1N1_mds.H1N1_mds.VirusLocs.log">		
 			<MatrixParameter idref="virusLocations"/>
 		</log> 
+		<!-- Since I am now not scaling the mus, this become obsolete.
 		<log id="fileDriftedVirusLocations" logEvery="200000" fileName="H1N1_mds.drifted.VirusLocs.log">		
 			<statistic idref="driftedVirusLocations"/>
 		</log>
-
+		-->
 		<log id="fileLog3" logEvery="200000" fileName="H1N1_mds.drifted.SerumLocs.log">
 			<statistic idref="driftedSerumLocations"/>
 		</log>
