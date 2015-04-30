@@ -102,13 +102,15 @@ Detailed antigenic dynamics of influenza virus revealed by Bayesian phylogenetic
 \author[1]{Charles Y K Cheung}
 %%%\author[2]{Marc A. Suchard} 
 %%%\author[3]{Gabriela B. Cybis}
-\author[4]{Andrew Rambaut}
+\author[4,5]{Andrew Rambaut}
 \author[1]{Trevor Bedford}
 
-\affil[1]{Vaccine and Infectious Disease Division, Fred Hutchinson Cancer Research Center, Seattle, WA}
-\affil[4]{Institute of Evolutionary Biology, University of Edinburgh, Ashworth Laboratories, Edinburgh, UK and Fogarty International Center, National Institutes of Health, Bethesda, MD, USA}
+\affil[1]{Vaccine and Infectious Disease Division, Fred Hutchinson Cancer Research Center, Seattle, WA, USA}
 %%%\affil[2]{Departments of Biomatematics and Human Genetics, David Geffen School of Medicine and Department of Biostatistics, Fielding School of Public Health, University of California, Los Angeles, California, U.S.A}
 %%%\affil[3]{Department of Statistics, Federal University of Rio Grande do Sul, Porto Alegre, RS, Brazil}
+\affil[4]{Institute of Evolutionary Biology, University of Edinburgh, Ashworth Laboratories, Edinburgh, UK and Fogarty International Center, National Institutes of Health, Bethesda, MD, USA}
+\affil[5]{Fogarty International Center, National Institutes of Health, Bethesda, MD, USA}
+
 
 \date{}
 
@@ -158,23 +160,19 @@ Detailed antigenic dynamics of influenza virus revealed by Bayesian phylogenetic
 %%% ABSTRACT %%%
 \begin{abstract}
 
-%%%  can have 250 words - still can add a sentence or two.%%%
-Each year, influenza viruses cause over 250,000 deaths. 
+%%%  can have 250 words - currently 249 words %%%
+Each year, infection by seasonal influenza viruses cause over 250,000 deaths. 
 Vaccination remains the most effective way to limit epidemic spread. 
 To select a vaccine strain, the World Health Organization uses antigenic cartography, a technique based on multidimensional scaling, to analyze serological data from hundreds of virus isolates. 
-Here, we extended this method to enable systematic clustering of viruses into discrete antigenic phenotypes. 
-We explicitly leveraged information from virus phylogeny to relate viral evolution to the emergence of major antigenic phenotypes. 
-Our model extended a recently introduced Bayesian multidimensional scaling technique for antigenic cartography, thereby capturing uncertainty in clustering and cartographic location. 
-In this framework, we used the Bayesian Stochastic Search Variable Selection to probabilistically infer branches associated with antigenic transitions. 
-We developed model-specific proposals to address the challenge of mixing when computing the posterior estimates using the Markov chain Monte Carlo sampling technique. 
-In our considered setting, results from simulations suggest that our approach can detect antigenic clusters with high sensitivity ($\sim$90\%), even when the percentage of missing data is high (90\%).
-We analyzed several decades of historical A/H1N1 and A/H3N2 antigenic data and successfully inferred circulating antigenic phenotypes. 
-In A/H3N2, our method inferred almost all identified transitions from 1968-2004(2?) from a previous work with high confidence and inferred additional antigenic transitions until 2010.
-Our inference also suggested the branches leading to antigenic transitions and estimated other antigenic parameters.
-%what else are important from the paper that I missed?
-We believe that this method may have utility in facilitating surveillance of antigenic phenotypes and therefore vaccine strain selection for antigenically variable pathogens. %I think we should back up this statement in the text if we want to put this sentence in
-
-
+Here, we extend this method to enable systematic clustering of viruses into discrete antigenic phenotypes. 
+We explicitly leverage information from virus phylogeny to relate viral evolution to the emergence of major antigenic phenotypes, and in this framework, probabilistically infer branches associated with antigenic transitions. 
+This work builds on a recently introduced Bayesian multidimensional scaling technique for antigenic cartography, thereby capturing uncertainty in clustering and cartographic location.
+Posterior distributions were computed using Markov chain Monte Carlo with model-specific proposals to address the challenge of efficient mixing. 
+In our considered setting, results from simulations suggest that our approach can detect antigenic clusters with high sensitivity ($\sim$90\%), even when the proportion of missing measurements is high (90\%).
+Here, we analyze several decades of historical A/H1N1 and A/H3N2 antigenic data and infer circulating antigenic phenotypes. 
+In A/H3N2, our method identified XXX clusters with high confidence and estimated the rate of antigenic transitions to be XXX events per lineage per year.
+We also estimate the distribution of antigenic transition sizes and the degree of co-circulation of competing antigenic phenotypes.
+We believe that this method may have utility in identifying newly arisen antigenic phenotypes and thus may facilitate surveillance efforts.
 
 \hfill
 
@@ -200,40 +198,38 @@ We believe that this method may have utility in facilitating surveillance of ant
 
 
 Antigenically variable pathogens are a major burden of disease worldwide. 
-These pathogens have the ability to constantly evade immunity to allow them to re-infect a host after prior exposure or vaccination to these pathogens. 
-One notable example is the A/H3N2 Influenza virus, which evolves a new antigenic phenotype every few years \cite{smith_mapping_2004}.
-Genetic mutations in the Hemagglutination (HA) gene, a highly variable genetically region that encodes a surface protein  for the entry of virus into the host, enable this virus to escape recognition by antibodies previously elicited to target an older virus strain. 
-Thus, distinct antigenic phenotypes arises from genetic evolution, and understanding this link is an important task from both public health and evolutionary and molecular biology perspectives.
+These pathogens have the ability to constantly evade immunity, allowing them to re-infect hosts despite prior exposure or vaccination. 
+One notable example is the A/H3N2 influenza virus, in which new antigenic phenotypes frequently emerge and displace existing variants \cite{smith_mapping_2004, bedford_integrating_2014}.
+Genetic mutations in the hemagglutinin (HA) gene, which encodes a surface protein allowing cellular entry of virus, enable this virus to escape recognition by antibodies previously elicited to target virus from a previous infection. 
+Thus, distinct antigenic phenotypes arises from genetic evolution, and understanding this link is an important task from both public health and evolutionary and molecular biological perspectives.
 %genetic drift, antigenic drift.
 % selective pressure 
 
 %Question: do I need to go into explicit details about how we measure antigenic variation in the introduction? Why is it important, or is it not?
-Some important understanding about antigenic variation in pathogens is acquired by analyzing antigenic data \cite{smith_mapping_2004, jong_antigenic_2007}. 
-In a typical experiment for Influenza virus, a ferret is challenged by a reference strain, such as a vaccine strain, so that the ferret produces antibodies targeting the antigens in the strain. 
-Then, using the extracted blood serum containing these antibodies, a Hemagglutination Inhibition (HI) assay is performed on a panel of tested strains that are of current interest. 
-A high titer value corresponds to strong reactivity between the antibodies in the serum and a tested strain, which is expected when the tested strain is homologous to the reference strain.
-On the other hand, a low titer value may suggest that the tested strain is considerably different from the reference strain, which happen if the tested strain and reference strain belong to distinct antigenic phenotypes. 
-In recent decades, the World Health Organization (WHO) has collected these titer measurements taken on sera from many reference strains\cite{smith_mapping_2004}. 
-As tables of these measurements accumulate, extracting, summarizing, and interpreting this antigenic data to understand historical and emerging antigenic variation has become a challenging task.
+An understanding of influenza antigenic phenotype primarily derives from analysis of serological data \cite{smith_mapping_2004}. 
+In a typical experiment for influenza virus, a ferret is challenged by a reference virus, such as a vaccine strain, so that, after recovery, the ferret produces antibodies targeting the challenge virus. 
+Then, using the extracted blood serum containing these antibodies, a hemagglutination inhibition (HI) assay is performed on a panel of viruses that are of current interest. 
+A high titer value corresponds to strong reactivity between the antibodies in the ferret serum and the virus, which is expected when the test virus is homologous to the reference serum.
+On the other hand, a low titer value may suggest that the test virus is antigenically distinct from the reference strain. 
+In recent decades, the World Health Organization (WHO) has collected titer measurements from large panels of viruses and sera \cite{smith_mapping_2004, russell_global_2008}. 
+As tables of these measurements accumulate, extracting, summarizing, and interpreting this antigenic data to understand historical and emerging antigenic variation has become an increasingly challenging task. % TB: great sentence!
 
-Since its introduction, antigenic cartography \cite{smith_mapping_2004, cai_computational_2010} has become an indispensible tool used by the WHO to study antigenic variation in Influenza virus and other antigenically variable pathogens such as malarias, rabies, foot and mouth disease, enteroviruses, and HIV \cite{smith_mapping_2004, jong_antigenic_2007, ludi_antigenic_2014, frost_mapping_2013}.
-Antigenic cartography is a dimension-reduction technique based on the multidimensional scaling (MDS) algorithm to create intuitive two
-dimensional maps. 
-This map summarizes the relationship between viruses and sera, and each virus and serum is assigned a coordinate.
-Viruses that are close in Euclidean distance are expected to react to the sera similarly, which suggests that they belong to the same antigenic cluster. 
+Since its introduction, antigenic cartography \cite{smith_mapping_2004, cai_computational_2010} has become an indispensible tool used to study antigenic variation in influenza virus and other antigenically variable pathogens such as foot and mouth disease virus, enteroviruses, and HIV \cite{smith_mapping_2004, jong_antigenic_2007, ludi_antigenic_2014, debbink_withinhost_2014, frost_mapping_2013}.
+Antigenic cartography is a dimensionality-reduction technique based on multidimensional scaling (MDS) to create intuitive and interpretable two
+dimensional antigenic maps. 
+An antigenic map summarizes the relationship between viruses and sera, such that HI titer is inversely proportional to Euclidean distance between viruses and sera.
+In this case, viruses that are close together on an antigenic map are expected to possess similar antigenic phenotypes. 
 
-Identifying distinct antigenic phenotypes is an important task for monitoring the evolution of antigenic phenotypes and for making decisions related to vaccine strain selection in humans and animals \cite{smith_mapping_2004, jong_antigenic_2007, fouchier_use_2010}.
-Most commonly, clustering viruses into antigenic phenotypes are performed by manual classification or by performing K-means clustering on the antigenic map \cite{smith_mapping_2004, ?}. 
-In the presence of measurement noises, nontrivial relationship between viruses and sera, and missing data \cite{cai_computational_2010}, eye inspection of tables of antigenic data (Figure \ref{H1N1titer}) and even the antigenic map often does not suggest a clear way of clustering. 
-Therefore, systematic integration of other information such as the viral sequences that enables a more informative underlying basis for identifying the major antigenic clusters is beneficial.
-Recently, Cybis et al. \cite{ADD ARVIX} proposed a method to perform probabilistic clustering based on the Bayesian multidimensional scaling \cite{oh_bayesian_2001, bedford_integrating_2014} that allows integration of viral sequences. 
+Identifying distinct antigenic phenotypes is an important task for monitoring the evolution of antigenic phenotypes and for making decisions related to vaccine strain selection in humans and animals \cite{smith_mapping_2004, fouchier_use_2010}.
+Most commonly, clustering viruses into antigenic phenotypes are performed by manual classification or by performing $k$-means clustering on the antigenic map \cite{smith_mapping_2004}. 
+In the presence of measurement noise, non-trivial relationships between viruses and sera, and missing data \cite{cai_computational_2010}, visual inspection of tables of antigenic data and even the antigenic map often does not suggest an obvious clustering. 
+Therefore, systematic integration of other information such as the viral sequences that enables a more informative underlying basis for identifying major antigenic clusters is beneficial.
+Recently, Cybis et al. \cite{cybis_bayesian_2015} proposed a method to perform probabilistic clustering based on a recently introduced Bayesian multidimensional scaling method \cite{oh_bayesian_2001} that allows integration of viral sequences \cite{bedford_integrating_2014}. 
 This method offers two main contributions. 
-First, the Bayesian framework allows antigenic clustering to take into account of uncertainty in the inference \cite{bedford_integrating_2014}.
-Second, by integrating sequence data via the number of substitutions between each pair of sequence modeled using the distance-dependent Chinese Restaurant Process, viruses that are more closely related would apriori be more likely to be classified into the same clusters. 
-The existing methods, however, do not provide a direct mapping between genetic and antigenic evolution. 
-%another thing we should say?
-As antigenic evolution arises from genetic evolution, we believe that a clustering method that explicitly models the connection between these two components would further contribute to the understanding of this link.
-
+First, the Bayesian framework allows antigenic clustering to take into account uncertainty in the inference of antigenic locations \cite{bedford_integrating_2014}.
+Second, by integrating sequence data via the number of substitutions between each pair of sequence modeled using the distance-dependent Chinese restaurant process \cite{blei_distance_2011}, viruses that are more closely related would \textit{a priori} be more likely to be classified into the same clusters. 
+These existing methods, however, do not provide a direct mapping between genetic and antigenic evolution. 
+As antigenic evolution arises from genetic evolution, we believe that a clustering method that explicitly models the connection between these two components would further contribute to the understanding of this link and result in a more powerful genotype-phenotype model.
 
 \begin{figure}[h]
 	\centering		
