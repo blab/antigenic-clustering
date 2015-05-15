@@ -240,7 +240,7 @@ This method, which is intuitive and philosophically simple, offers two important
 First, by leveraging an inferred viral phylogeny that provides information about the evolutionary relationship among viruses, we are able to probabilistically infer the branches in the phylogeny where the most important antigenic transition occurs. 
 Second, by incorporating phylogeny explicitly, we can estimate other interesting parameters such as the change in antigenic distance in major antigenic transitions. 
 %other advantages?
-We implemented our method in the phylogenetic inference software BEAST and is openly available \cite{drummond_beast:_2007}.
+We implemented our method in the phylogenetic inference software BEAST and is openly available \cite{BEAST17}.
 Using this method, we analyzed recently curated A/H3N2 and A/H1N1 datasets and identified the most significant antigenic phenotypes over the last several decades. 
 In A/H3N2, we compared our clusters with previously defined cluster \cite{smith_mapping_2004}, and identified new antigenic phenotypes since its published work in 2004. 
 Last, we evaluated our method by simulations.
@@ -1146,7 +1146,7 @@ Other details of the datasets were described in a previous work \cite{bedford_in
 We obtained HA nucleotide sequences for A/H3N2 and A/H1N1 from a previous study \cite{bedford_integrating_2014} that collected the data from the Influenza Research \cite{IRD} and the EpiFlu databases \cite{GISAID}. 
 First, these databases were queried by matching strain names, e.g.\ A/HongKong/1/1968, that corresponded with the strain names from the antigenic datasets.
 Second, sequences were aligned by using MUSCLE v3.7 under default settings \cite{MUSCLE}.
-Third, BEAST\cite{drummond_beast:_2007} was used to perform phylogenetic inference on the A/H3N2 and A/H1N1 datasets.
+Third, BEAST\cite{BEAST17} was used to perform phylogenetic inference on the A/H3N2 and A/H1N1 datasets.
 In these analyses, the SRD06 nucleotide substitution model \cite{Shapiro06}, a coalescent demographic model with constant effective population size and a strict molecular clock across branches, was used.
 The MCMC sampled 60 million steps and every 50,000th steps was printed.
 Allowing for a burn-in of 10 million steps, a total sample of 2000 trees were kept for subsequent clustering analysis.
