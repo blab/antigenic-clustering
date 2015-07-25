@@ -1,24 +1,29 @@
 July 23, 2015
 
+
+
 Computation & numbers:
 - fill in the the numbers
-
+- Locate my codes and scripts and results
 
 Figures:
-- use Trevor's figures (and maybe suggest changes if necessary)
-- too many figures, need to move some to the Supplementary
-- properly draw my schematic figures (that main schematic one , MCMC proposals)
-- figure 1 - fill in the text after looking at the python titerdb code to see how I generate the figure
+[done]- use Trevor's figures (and maybe suggest changes if necessary)
+[done]- too many figures, need to move some to the Supplementary
+[done] properly draw my schematic figures (those in the manuscript
+redraw MCMC proposal figures in the Supplementary material
+- add text to the supplementary figures
+- supplementary material figure 1 -  fill in the text after looking at the python titerdb code to see how I generate the figure
 
 
 Coding:
-- migrate code to BEAST 2.0 on github. I developed my code on 1.8
+- migrate code to BEAST 2.0 on github. I developed my code on 1.8. Do I need to?
 - upload code to github 
 
 
 text changes:
-- "autoregressive" model .. figure out whether it is the wrong word to use.
-- word change:  Method: "k" sera to 'n_s" sera for consistency
+[done]- "autoregressive" model .. figure out whether it is the wrong word to use.
+		- to be safe, I use "antigenic additive mdoel" instead
+[done]- word change:  Method: "k" sera to 'n_s" sera for consistency
 - question to think about: for H1N1, why do we not see clusters on straight line?
 
 
