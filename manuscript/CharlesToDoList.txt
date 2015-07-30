@@ -1,29 +1,78 @@
 July 23, 2015
 
+Task:
+- run beast to get those evaluations: (take maybe a week)
+	- more runs for simulation   [running]
+	- more runs for MCMC diagnostics [running]
 
+
+TO DO:
+
+0.2: set run for H1N1 at higher mds  [running]
+	- look at clustering
+
+1. prepare supplementary materials   
+	- redraw the MCMC schematic diagram figures [done]
+	- see which figures I want to keep by looking at the texts [done]
+	- add text for each supplementary figure that I decide to keep
+	- note which figures I need to regenerate when I see the new results, and find the scripts for it
+
+	
+2. BEAST code
+
+	Current state: Messy because of the different versions I used to run things
+	- I have an earlier version of code used for main analysis
+	- since then I have a version I uploaded to github that has organized the codes
+	- I also have a version used to simulate data
+	- and a version (I think it is almost identical to the version used for analyzing simulated data)
+
+	- try to recompile the versions in a separated folder
+		- try to run the XML for each version
+			- goal: make sure I can rerun the analysis with those xml files
+
+	- try to see if these codes would run on BEAST 2.0 on github
+	- upload codes onto BEAST github
+
+
+3. fill in the numbers from the manuscript
+	- need to look at the scripts 
+	- write codes to get those numbers I want
+	
+
+4. locate my codes, run files, and scripts and results 
+	- along the way when I do the tasks above
+	
+	
+==========================================
+Then,
+	
+-revise text
+-fill in references
+
+
+=================================================================================
 
 Computation & numbers:
 - fill in the the numbers
+- run beast to get those evaluations:
+	- more runs for simulation
+	- more runs for MCMC diagnostics
 - Locate my codes and scripts and results
 
-Figures:
-[done]- use Trevor's figures (and maybe suggest changes if necessary)
-[done]- too many figures, need to move some to the Supplementary
-[done] properly draw my schematic figures (those in the manuscript
+Coding:
+- migrate code to BEAST 2.0 on github. I developed my code on 1.8. Do I need to?
+- upload code to github
+- upload run results somewhere
+
+
+Prepare supplementary materials
 redraw MCMC proposal figures in the Supplementary material
 - add text to the supplementary figures
 - supplementary material figure 1 -  fill in the text after looking at the python titerdb code to see how I generate the figure
 
 
-Coding:
-- migrate code to BEAST 2.0 on github. I developed my code on 1.8. Do I need to?
-- upload code to github 
-
-
 text changes:
-[done]- "autoregressive" model .. figure out whether it is the wrong word to use.
-		- to be safe, I use "antigenic additive mdoel" instead
-[done]- word change:  Method: "k" sera to 'n_s" sera for consistency
+- general text revision
 - question to think about: for H1N1, why do we not see clusters on straight line?
 
 
@@ -35,3 +84,10 @@ Others:
 
 
 
+[done]- use Trevor's figures (and maybe suggest changes if necessary)
+[done]- too many figures, need to move some to the Supplementary
+[done] properly draw my schematic figures (those in the manuscript
+
+[done]- "autoregressive" model .. figure out whether it is the wrong word to use.
+		- to be safe, I use "antigenic additive mdoel" instead
+[done]- word change:  Method: "k" sera to 'n_s" sera for consistency
