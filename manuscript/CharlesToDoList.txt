@@ -2,23 +2,58 @@ July 23, 2015
 
 Task:
 - run beast to get those evaluations: (take maybe a week)
-	- more runs for simulation   [running]
+	- more runs for simulation   [done]
 	- more runs for MCMC diagnostics [running]
 
 
 TO DO:
 
-0.2: set run for H1N1 at higher mds  [running]
-	- look at clustering
+0.2: set run for H1N1 at higher mds  [done]
+	- look at clustering   [remind Trevor to look at it on Monday]
+	- let him decide on the default MDS level
 
-1. prepare supplementary materials   
+0b - Look at the manuscript, see what I have to change:
+	- when h1n1 kappa = 0.3?
+	- h3n2 kappa = 0.1
+
+
+0c - Consensus clustering for the trees
+
+0d - but what about the antigenic map?
+	- also use consensus?
+
+1a. manuscript text
+    - revise results section [done]
+    - write proper description for each figure in the manuscript
+	- note which figures I will need to regenerate
+
+1b. prepare supplementary materials   
 	- redraw the MCMC schematic diagram figures [done]
 	- see which figures I want to keep by looking at the texts [done]
 	- add text for each supplementary figure that I decide to keep
-	- note which figures I need to regenerate when I see the new results, and find the scripts for it
+	- note which figures I will need to regenerate when I see the new results, and find the scripts for it
 
+
+3. locate my codes, run files, and scripts and results [in progress]	
+
+
+2. fill in the numbers from the manuscript
+	- note the list of numbers to compute
+
+	- need to look at the scripts 
+	- write codes to get those numbers I want
+
+
+
+4. Text
+	- fill in the reference
+	- do a full manuscript revision to figure
 	
-2. BEAST code
+	
+5. do any unfinished section, along with Trevor's input
+	
+
+6. BEAST code
 
 	Current state: Messy because of the different versions I used to run things
 	- I have an earlier version of code used for main analysis
@@ -34,14 +69,9 @@ TO DO:
 	- upload codes onto BEAST github
 
 
-3. fill in the numbers from the manuscript
-	- need to look at the scripts 
-	- write codes to get those numbers I want
+
 	
 
-4. locate my codes, run files, and scripts and results 
-	- along the way when I do the tasks above
-	
 	
 ==========================================
 Then,
