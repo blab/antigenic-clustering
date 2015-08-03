@@ -123,7 +123,7 @@ Detailed antigenic dynamics of influenza virus revealed by Bayesian phylogenetic
 \begin{abstract}
 
 %%%  can have 250 words - currently 249 words %%%
-Each year, infection by seasonal influenza viruses cause over 250,000 deaths. 
+Each year, infection by seasonal influenza viruses causes over 250,000 deaths. 
 Vaccination remains the most effective way to limit epidemic spread. 
 To select a vaccine strain, the World Health Organization uses antigenic cartography, a technique based on multidimensional scaling, to analyze serological data from hundreds of virus isolates. 
 Here, we extend this method to enable systematic clustering of viruses into discrete antigenic phenotypes. 
@@ -132,9 +132,10 @@ This new method extends a recently introduced Bayesian multidimensional scaling 
 Posterior distributions were computed using Markov chain Monte Carlo with model-specific proposals to address the challenge of efficient mixing. 
 In our considered setting, results from simulations suggest that our method can detect antigenic clusters with high sensitivity ($\sim$90\%) even when the proportion of missing measurements is high (90\%).
 Here, we analyze several decades of historical A/H1N1 and A/H3N2 antigenic data to infer circulating antigenic phenotypes. 
-In A/H3N2, our method identified XXX clusters with high confidence and estimated the rate of antigenic transitions to be XXX events per lineage per year.
-We also estimate the distribution of antigenic transition sizes and the degree of co-circulation of competing antigenic phenotypes.
-We believe that this method may have utility in identifying emerging antigenic phenotypes and thus may facilitate surveillance efforts.
+In A/H3N2, our method identified clusters with high confidence.  % and estimated the rate of antigenic transitions to be XXX events per lineage per year.
+%We also estimate the distribution of antigenic transition sizes and the degree of co-circulation of competing antigenic phenotypes.
+%Trevor: what's actually interesting?
+This method may have utility in identifying emerging antigenic phenotypes and thus may facilitate surveillance efforts.
 
 \hfill
 \end{abstract}
@@ -144,7 +145,7 @@ We believe that this method may have utility in identifying emerging antigenic p
 %%% INTRODUCTION %%%
 \section*{Introduction}
 
-Antigenically variable pathogens such as influenza viruses are a major disease burden worldwide. 
+Antigenically variable pathogens such as influenza viruses are major disease burden worldwide. 
 These pathogens have the ability to constantly evade immunity, allowing them to re-infect hosts with prior exposure or vaccination. 
 One notable example is the A/H3N2 influenza virus, in which new antigenic phenotypes frequently emerge and displace existing variants \cite{smith_mapping_2004, bedford_integrating_2014}.
 Genetic mutations in the hemagglutinin (HA) gene, which encodes a surface protein that allows the virus to enter a host cell, enable this virus strain to escape recognition by antibodies previously elicited to target this strain from a previous infection. 
@@ -156,41 +157,41 @@ Understanding the relationship between genotype and antigenic evolution is an im
 Serological data provides important information about the antigenic phenotype of influenza viruses \cite{smith_mapping_2004}. 
 In a typical experiment of influenza virus, a ferret is challenged by a reference virus, such as a vaccine strain.
 Subsequently, the ferret produces antibodies to neutralize the challenge virus. 
-Then, the experimenter would extract blood serum containing these antibodies to perform a hemagglutination inhibition (HI) assay  on a panel of viruses that are of current interest. 
+Then, the experimenter would extract blood serum containing these antibodies to perform a hemagglutination inhibition (HI) assay  on a panel of viruses, such as the current circulating strains. 
 A high titer value corresponds to strong reactivity between antibodies in the ferret serum and the tested virus, as would be expected when this test virus is homologous to the reference serum.
 On the other hand, a low titer value suggests that this test virus is antigenically distinct from the reference strain. 
-In recent decades, the World Health Organization (WHO) has collected titer measurements from large panels of viruses and sera \cite{smith_mapping_2004, russell_global_2008}. 
+In recent decades, the World Health Organization (WHO) and other organizations have collected titer measurements from large panels of viruses and sera \cite{Smith04,Kendal78,Webster79,Nakajima79,Nakajima81,Chakraverty82,Pereira82,Chakraverty86,Cox83,Daniels85,Raymond86,Stevens87,Donatelli93,Hay01,Daum02,McDonald07,Barr10} (Figure S1).
 As tables of these measurements accumulate, extracting, summarizing, and interpreting this antigenic data to understand historical and emerging antigenic variation has become an increasingly challenging task. % TB: great sentence!
 
-Since its introduction, antigenic cartography \cite{smith_mapping_2004, cai_computational_2010} has become an indispensable tool used to study antigenic variation in influenza virus and other antigenically variable pathogens such as foot and mouth disease virus, enteroviruses, and HIV \cite{smith_mapping_2004, jong_antigenic_2007, ludi_antigenic_2014, debbink_withinhost_2014, frost_mapping_2013}.
-Antigenic cartography is a dimensionality-reduction technique based on multidimensional scaling (MDS) to create intuitive and interpretable two
-dimensional antigenic maps. 
+Since its introduction, antigenic cartography \cite{smith_mapping_2004, cai_computational_2010} has become an indispensable tool used to study antigenic variation in influenza viruses and other antigenically variable pathogens such as foot and mouth disease virus, enteroviruses, and HIV \cite{smith_mapping_2004, jong_antigenic_2007, ludi_antigenic_2014, debbink_withinhost_2014, frost_mapping_2013}.
+Antigenic cartography is a dimensionality-reduction technique based on multidimensional scaling (MDS) to create intuitive and interpretable two dimensional antigenic maps. 
 An antigenic map summarizes the relationship between viruses and sera.
 In influenza viruses, HI titer is inversely proportional to Euclidean distance between viruses and sera.
 Viruses that are close together on an antigenic map are expected to share similar antigenic phenotypes. 
 
 Identifying distinct antigenic phenotypes is an important task for monitoring the evolution of antigenic phenotypes and for making decisions related to vaccine strain selection in humans and animals \cite{smith_mapping_2004, fouchier_use_2010}.
 Most commonly, clustering viruses into antigenic phenotypes are performed by manual classification or by performing $k$-means clustering on the antigenic map \cite{smith_mapping_2004}. 
-In the presence of measurement noise, non-trivial relationships between viruses and sera, and missing data \cite{cai_computational_2010}, it could be difficult to interpret clusters from tables of antigenic data or by even by visually inspecting the antigenic map. 
+In the presence of measurement noise, non-trivial relationships between viruses and sera, and missing data \cite{cai_computational_2010}, it could be difficult to interpret clusters from raw tables of HI data or even by visually inspecting the antigenic map. 
 Therefore, systematic integration of other information such as the viral sequences could enable a more informative inference of major antigenic clusters.
 Recently, Cybis et al. \cite{cybis_bayesian_2015} proposed a method to perform probabilistic clustering based on a recently introduced Bayesian multidimensional scaling method \cite{oh_bayesian_2001} that allows integration of viral sequences \cite{bedford_integrating_2014}. 
 This method offers two main contributions. 
 First, the Bayesian framework allows antigenic clustering to take into account uncertainty in the inference of antigenic locations \cite{bedford_integrating_2014}.
 Second, by integrating sequence data via the number of substitutions between each pair of sequence modeled using the distance-dependent Chinese restaurant process \cite{blei_distance_2011}, viruses that are more closely related would \textit{a priori} be more likely to be classified into the same clusters. 
 These existing methods, however, do not provide a direct mapping between genetic and antigenic evolution. 
-As antigenic evolution arises from genetic evolution, we believe that a clustering method that explicitly models the connection between these two components would further contribute to the understanding of this link and result in a more powerful genotype-phenotype model.
+As antigenic evolution arises from genetic evolution, we believe that a clustering method that explicitly models the connection between these two components would further contribute to the understanding of this link and result in a more powerful genotype to phenotype model.
 
 Here, we introduce a new method for clustering viruses that relates genetic and antigenic evolution. 
 Our work extends the original model for antigenic cartography \cite{smith_mapping_2004} and the Bayesian multidimensional scaling approach \cite{bedford_integrating_2014} to succinctly summarize the overall relationship between viruses and sera from the HI data in lower dimension.
 This method, which is intuitive and philosophically simple, offers two important advantages over existing methods. 
-First, by leveraging an inferred viral phylogeny that provides information about the evolutionary relationship among viruses, we are able to probabilistically infer the branches in the phylogeny where the most important antigenic transition occurs. 
+First, by leveraging an inferred viral phylogeny that provides information about the evolutionary relationship among viruses, we are able to probabilistically infer the branches in the phylogeny where the most important antigenic transitions occur. 
 Second, by incorporating phylogeny explicitly, we can estimate other interesting parameters such as the change in antigenic distance in major antigenic transitions. 
 %other advantages?
 
-We implemented our method in the phylogenetic inference software BEAST and is openly available \cite{BEAST17}.
+We implemented our method in the phylogenetic inference software BEAST and is openly available at https://github.com/blab/antigenic-clustering.
 Using this method, we analyzed recently curated A/H3N2 and A/H1N1 datasets and identified the most significant antigenic phenotypes over the last several decades. 
-In A/H3N2, we compared our clusters with previously defined cluster \cite{smith_mapping_2004}, and identified new antigenic phenotypes since the 2004 published work \cite{smith_mapping_2004}. 
+In A/H3N2, we compared our clusters with previously defined clusters \cite{smith_mapping_2004}, and identified new antigenic phenotypes since the 2004 published work \cite{smith_mapping_2004}. 
 Last, we evaluated our method by simulations.
+%Trevor: please add one or two sentences of main contributions
 The results suggested that this method achieved high sensitivity and high specificity in identifying major antigenic clusters.
 
 
@@ -219,7 +220,7 @@ Shading on the nodes indicate that they are active.
 Here, node 7, 11, and 18 (root) are active, and in the mathematical model, the active statuses are represented by binary indicators $I_{7}=I_{11}=I_{18} = 1$. 
 All other nodes are inactive ($I_i=0$). 
 The 3 active nodes partition the viruses, which are the external nodes, into 3 clusters.
-On the right panel, antigenic map of viruses and sera is drawn.
+On the right panel, the antigenic map of viruses and sera is drawn.
 Virus locations are determined by the phylogeny, indicator of which nodes are active, and the values of the $\mu$ vector.
 In this additive model, the blue, brown, and green clusters have locations $\mu_{18}$, $\mu_{18} + \mu_7$, and $\mu_{18}+ \mu_7 + \mu_{11}$, respectively.
 	} 
@@ -232,7 +233,7 @@ Our method incorporates several statistical and computational techniques.
 First, to perform phylogenetic inference via sequence data, we used the software BEAST, after which a Maximum Clade Credibility (MCC) tree is obtained for antigenic clustering.
 Second, to extract the most significant patterns from the antigenic data while simultaneously capturing uncertainties in the inference, we used the Bayesian MDS algorithm \cite{oh_bayesian_2001}.
 Third, to focus on identifying branches that are associated with major antigenic changes, we inferred antigenic clusters using the Bayesian Stochastic Search Variable Selection (BSSVS) method on nodes in the inferred phylogeny, a technique previously used by the phylodynamic \cite{lemey_bayesian_2009, drummond_bayesian_2010} and more generally by the Bayesian community \cite{kuo_variable_1998, hugh_chipman_practical_2001}.
-Fourth, to relate antigenic clustering with antigenic distance from one parental cluster to a child cluster, we applied an additive model \cite{drummond_bayesian_2010}.
+Fourth, to relate antigenic clustering with antigenic distance from one parental cluster to a child cluster, we applied an antigenic additive model \cite{drummond_bayesian_2010}.
 Finally, to perform this Bayesian inference, we used the Markov chain Monte Carlo (MCMC) technique along with specialized proposals to sample from the posterior distribution. 
 
 
@@ -248,8 +249,8 @@ A phylogeny $T$ consists of N total nodes that include $n_v$ external nodes repr
 Associated with each node $i$ is a binary indicator variable $I_i \in \{0,1\}$. 
 Here, we define a node $i$ as active if $I_i = 1$.
 When node $i$ is active, this node and all its descending nodes are branched off into a new cluster from the parent node of $i$.
-The root node is always active (i.e. $I_{N} = 1$) because it gives rise to the first cluster.
-By pre-order traversing $T$ from the root node along with a configuration $I=(I_1, ..., I_N)=(i_1, ..., i_N)$, cluster labels are assigned to viruses (Figure~\ref{additiveModel}).
+The root node (index N) is always active (i.e. $I_{N} = 1$) because it gives rise to the first cluster.
+Pre-order traversing $T$ from the root node along with a configuration $I=(I_1, ..., I_N)=(i_1, ..., i_N)$ is used to assign cluster labels to viruses (Figure~\ref{additiveModel}).
 
 In phylodynamic literature, the Bayesian inference of the parameter $I$ is referred to as the Bayesian Stochastic Search Variable Selection procedure (BSSVS) \cite{lemey_bayesian_2009}.
 This procedure has been applied in a setting to determine the subset of parameters in the phylodynamic transition matrix that are nontrivial. 
@@ -261,22 +262,22 @@ Each indicator $I_i$, for $i=1,..N-1$, has an equal prior probability to be acti
 %computationally impractical...
 
 
-\subsubsection*{Additive Model for Antigenic Locations of Viruses}
+\subsubsection*{Additive Model for the Antigenic Locations of Viruses}
 
 We connect phylogenetic clustering with antigenic trait by using an additive model to assign antigenic locations to viruses. 
 Our model assumes that all viruses in the same cluster share the same antigenic coordinate and viruses in different clusters have different antigenic coordinates.
-This modeling decision is motivated by the evidence that only a small fraction of driver mutations contribute to substantial antigenic drift \cite{koel_substitutions_2013}, so our priority here is to parsimoniously model the most substantial antigenic changes.
+This modeling decision is motivated by the belief \cite{Bedford12} and evidence \cite{koel_substitutions_2013} that only a small fraction of driver mutations contribute to substantial antigenic drift , so our priority here is to parsimoniously model the most substantial antigenic changes.
 
 
 
-While we are only interested in the antigenic location of the $n_v$ viruses corresponding to the external nodes $X=(X_1,..., X_{n_{v}})$, $X_i \in \mathbb{R}^{2}$, we first consider the augmented space $X' = (X_1, ...X_{n_v}, X_{ n_v +1},..., X_N)$ that consists of locations of both  external and internal ($X=(X_{n_v + 1},..., X_N)$) nodes.
+While we are only interested in the antigenic location of the $n_v$ viruses corresponding to the external nodes $X=(X_1,..., X_{n_{v}})$, $X_i \in \mathbb{R}^{2}$, we first consider the augmented space $X' = (X_1, ...X_{n_v}, X_{ n_v +1},..., X_N)$ that consists of the locations of both  external and internal ($X=(X_{n_v + 1},..., X_N)$) nodes.
 Initially, we define
 \begin{eqnarray}
  	X_{N} = \mu_N     ,
 \end{eqnarray}
  where this last index $N$ corresponds to the internal root node and $\mu_N \in \mathbb{R}^{2}$ is a parameter representing the antigenic change from the origin, which in this case is the absolute antigenic location associated with the root node. 
 
-We perform a pre-order traversal on the entire set of nodes in $T$  from the root node to assign antigenic locations of the remaining nodes by using an additive model along with the vector $\mu = (\mu_1,...\mu_N)$, where $\mu_i = (\mu_{i1},  \mu_{i2}) \in \mathbb{R}^{2}$ represents the antigenic change from the parent node to the child node.
+The method performs a pre-order traversal on the entire set of nodes in $T$  from the root node to assign antigenic locations of the remaining nodes by using an additive model along with the vector $\mu = (\mu_1,...\mu_N)$, where $\mu_i = (\mu_{i1},  \mu_{i2}) \in \mathbb{R}^{2}$ represents the antigenic change from the parent node to the child node.
 \begin{equation}
 	X_i=  X_{p(i)} + \mu_i    I_i   		,
 \end{equation}
@@ -289,7 +290,7 @@ Algorithmically, the antigenic location assignment is done in conjunction with t
 This additive model is appealing for a couple of reasons.
 First, this model explicitly infers the change in antigenic distance $\mu_i$ from one cluster to the next.
 Second, this model partitions viruses in a way that is related to the evolution process as specified by $T$.
-This model naturally delineates the path of clusters transition, a feature that is also new to this clustering method.
+This model naturally delineates the path of cluster transitions, a feature that is also new to this clustering method.
 
 
 \subsubsection*{Bayesian Posterior Inference}
@@ -310,7 +311,7 @@ We define the tuning parameter for antigenic clustering as the precision term in
 A higher $\kappa$ sets the model to tolerate less noise around the expected log$_2$ titers.
 Thus, increasing the value of $\kappa$ encourages the antigenic clustering method to identify more clusters.
 The antigenic likelihood is further discussed in the Method section.
-The second component $p(Y|  \beta , d)$ defines the prior for sera locations $Y$, conditional on the dates of sera ($d$), the drift parameter $\beta$, and the fixed serum variance $\sigma^2_s$ of 1. 
+The second component $p(Y|  \beta , d)$ defines the prior for sera locations $Y$, conditional on the dates of sera ($d$), the drift parameter $\beta$, and the serum variance $\sigma^2_s$. 
 The next components $p(I)$ , $p(\mu)$, and $p(\beta)$ define the prior for $I$, $\mu$, and $\beta$, respectively.
 We assume an equal probability $p$ for each $p(I_i = 1)$.
 We assume an independent and identically distributed normal prior for $\mu_i$, $i=1,...N$ for each dimension $j \in {1,2}$.
@@ -339,8 +340,10 @@ We describe the remaining components, details of the Bayesian Antigenic Cartogra
 
 \subsection*{A/H3N2}
 The antigenic phenotypes of A/H3N2 evolves substantially quicker than A/H1N1 during a comparable timeframe (Figure \ref{heatmaps}, \ref{H3N2tree}, \ref{H1N1tree}).  %need a  year maybe..
-At the default $\kappa=0.05$, our method inferred 15[edit] clusters with at least 5 observed viruses.  
-At the higher $\kappa=0.15$, our method inferred $\sim$20[edit]. 
+%Trevor can decide what to write.
+%Not using this default kappa anymore.. and we don't count by at least 5 observed viruses = cluster now..
+%At the default $\kappa=0.05$, our method inferred 15[edit] clusters with at least 5 observed viruses.  
+%At the higher $\kappa=0.15$, our method inferred $\sim$20[edit]. 
 Similar to the results from A/H1N1, the higher number of clusters at $\kappa=0.15$ was a consequence of subdividing within the inferred clusters at $\kappa=0.05$, which is a desired property when changing $\kappa$.
 The consistent antigenic boundaries at $\kappa=0.05$ were maintained (Figure \ref{heatmaps}). 
 
@@ -348,8 +351,9 @@ The consistent antigenic boundaries at $\kappa=0.05$ were maintained (Figure \re
 \begin{figure}[h]
 	\centering		
 	\includegraphics[width=1\textwidth]{figures/lineArt/combine_h3n2_h1n1_heatmaps}
-	\caption{\textbf{Heatmap plot summarizing probabilistic clustering in A) A/H3N2 viruses using $\kappa$ at 0.05 (upper triangle - default condition) and 0.15 (lower triangle) and  B) A/H1N1 viruses using $\kappa$ at 0.1 (upper triangle - default condition) and 0.3 (lower triangle).}
-The viruses were ordered by the phylogeny in Figure \ref{H3N2tree} and \ref{H1N1tree}, and column i from the left and row i from the bottom denote the same virus strains.
+	\caption{\textbf{Heatmap plot summarizing probabilistic clustering in A) A/H3N2 and B) A/H1N1 viruses using the default $\kappa$.}
+The viruses were ordered by the phylogeny in Figure \ref{H3N2tree} and \ref{H1N1tree}, respectively.
+Column i from the left and row i from the bottom denote the same virus strains.
 Thus, each cell represents the proportion of MCMC runs in which a pair of viruses share the same antigenic cluster, with darker color representing higher probability.  
 	 		} 
 	\label{heatmaps} 
@@ -361,12 +365,15 @@ Thus, each cell represents the proportion of MCMC runs in which a pair of viruse
 	\centering		
 	%\includegraphics[width=1\textwidth]{figures/custom/H3N2MCC}
 	\includegraphics[width=1\textwidth]{figures/custom/h3n2_dynamics}
-	\caption{\textbf{Inferred antigenic clusters on the A/H3N2 phylogeny.}
- The coloring corresponds to the MCMC sample that gives the highest posterior density.
+%	\caption{
+	%Need to fill in the text once the Figure is available. Maybe Trevor can write this more accurately.
+	
+	%\textbf{Inferred antigenic clusters on the A/H3N2 phylogeny.}
+% The coloring corresponds to the MCMC sample that gives the highest posterior density.
  % The area of each node is proportional to the probability that the node is active. 
  %The root node has probability = 1. 
- In this analysis, the default $\kappa$  at 0.05 is used.
-	 		} 
+%In this analysis, the default $\kappa$  at 0.05 is used.
+%	 		} 
 	\label{H3N2tree} 
 \end{figure}
 
@@ -374,16 +381,19 @@ Thus, each cell represents the proportion of MCMC runs in which a pair of viruse
 \begin{figure}[h]
 	\centering		
 	\includegraphics[width=1\textwidth]{figures/custom/h1n1_dynamics}
-	\caption{\textbf{Inferred antigenic clusters on the A/H1N1 phylogeny.}
- The coloring corresponds to the MCMC sample that gives the highest posterior density. 
+%	\caption{
+%Need to fill in the text once the Figure is available. Maybe Trevor can write this more accurately.	
+
+%\textbf{Inferred antigenic clusters on the A/H1N1 phylogeny.}
+% The coloring corresponds to the MCMC sample that gives the highest posterior density. 
   % The area of each node is proportional to the probability that the node is active. 
  %The root node has probability = 1. 
- In this analysis, the default $\kappa$  at 0.1 is used.
-	 		} 
+ %In this analysis, the default $\kappa$  at 0.1 is used.
+%	 		} 
 	\label{H1N1tree} 
 \end{figure}
 
-
+%Note: this is outdated: we now use kappa = 0.1
 The clustering method at the default $\kappa=0.05$ recovered with high confidence almost all the  antigenic clusters inferred by Smith et al. \cite{smith_mapping_2004}. 
 Concordant to Smith's results, our method inferred the HK68, EN72, VIC75, BK79, SI87, BE89, BE92, WU95, SY97, FU02 to have distinct antigenic phenotypes (Figure \ref{heatmaps}). %give precise strain names?
 This high concordance is interesting because it suggests that the use of the simple k-means clustering algorithm, which does not use information from the hemagglutination sequences, still infers clusters that are generally similar to our more elaborated statistical clustering method that also incorporates information from hemagglutination sequences.  %I think at some point: we should say that our method does perform better in resolving some antigenic clusters that Smith grouped together as one - so our method is great.
@@ -391,7 +401,7 @@ Unlike the traditional antigenic cartography method, our method also allows us t
 The EN72, VIC75, (TX77), BK79, BE89, BE92, and SY97 strains that Smith et. al used to name the clusters were either on the branch leading to antigenic transitions or were very close to them.
 On the other hand, the HK68, SI87, WU95, and FU02 strains were in the middle of their respective clusters. 
 
-
+%Not sure if really 3 anymore.
 With data also from 2004 to 2011, our analysis inferred the emergence of three major antigenic phenotypes of nontrivial size ($>5$ viruses) since the end point of Smith's analysis \cite{smith_mapping_2004}.  
 These clusters were highly plausible, because they were associated with strains used in historic vaccine updates during the 2005-2006 (CA04), 2008-2009 (BR07), and 2010-2011 (PE09) flu seasons \cite{WHO VACCINE REPORT}. 
 %http://en.wikipedia.org/wiki/Influenza_A_virus_subtype_H3N2
@@ -420,13 +430,13 @@ Fifth, when a new antigenic cluster emerges, they are often at least 2 antigenic
 \begin{figure}[h]
 	\centering		
 	\includegraphics[width=1\textwidth]{figures/custom/stackedMuPlot}
-	\caption{\textbf{Stacked plot of the density of antigenic jump distance among nodes with high confidence to be associated with antigenic transitions ($p_i > 0.5$)  in the A/H3N2 and A/H1N1 analyses.}
+	\caption{\textbf{Stacked plot of the density of antigenic jump distance among nodes with high confidence to be associated with antigenic transitions (i.e. nodes that are inferred to be active in at least 50\% of the MCMC samples ($p_i > 50\%$))  in the A/H3N2 and A/H1N1 analyses.}
 	} 
 	\label{stackedMuPlot} 
 \end{figure}
 
 \subsection*{A/H1N1}
-
+%Note: the kappa = 0.3 now
 In A/H1N1, six major antigenic clusters were inferred between 1977 and 2009 (Figure \ref{H1N1tree}). 
 Under the default  $\kappa=0.1$, the method clustered viruses into very clear antigenic blocks  (Figure \ref{heatmaps}). 
 Within-block structure suggests mild evidence that the viruses from 2006 to 2009 could be further divided into two or three sub-clusters. 
@@ -440,25 +450,25 @@ Second, the later antigenic transitions jumped less in antigenic distance than t
 Third, nodes with significant evidence for antigenic cluster transition ($p_i > 0.5$) tend to have higher posterior mean change in antigenic distance than the other nodes (Figure S \ref{H1N1Muboxplot} ) .
 %not sure if we should keep the third point
 However, this result was likely because the sampling of more viruses in recent years gave the method a higher ability to detect antigenic clusters in recent years.
-Fourth, similar to A/H3N2, the A/H1N1 clusters with high confidence to be antigenically distinct ($p_i > 0.5$) (Figure \ref{stackedMuPlot}) usually diverge from their parental clusters by 2 unit in the antigenic jump distance $\mu_i$.
+Fourth, similar to A/H3N2, the A/H1N1 clusters with high confidence to be antigenically distinct ($p_i > 0.5$) (Figure \ref{stackedMuPlot}) usually diverge from their parental clusters by at least 2 unit in the antigenic jump distance $\mu_i$.
 
 
 
 \subsubsection*{Sensitivity Analyses}
 
-Diagnostics for MCMC convergence suggest that the MCMC mixing are adequate in both A/H1N1 and A/H3N2 analyses. 
+Diagnostics for MCMC convergence suggest that the MCMC mixing is adequate in both A/H1N1 and A/H3N2 analyses. 
 First, when comparing among MCMC replicates, the estimates of $p_i$ are almost identical (supplemental Table SX-Y). 
 The scatterplot of the distribution of these estimates in each pair of replicates shows very high concordance, with $R^2 > 0.9x$  for A/H1N1 (Figure SX-Y) for each level of $\kappa$ considered. 
-We expected that the A/H3N2 analysis would have more difficulty with MCMC mixing than the A/H1N1 analysis because the complexity of the MCMC inference is higher due to substantially more observations and more antigenic clusters. 
+We expected that the A/H3N2 analysis would be harder to mix than the A/H1N1 analysis because the complexity of the MCMC inference is higher due to substantially more observations and more antigenic clusters. 
 Nevertheless, MCMC mixing still appears to be adequate ($R^2 > 0.9x$ among each pair of replicate) (Figure SX-Y). 
 Second, the Gelman-Rubin statistic further suggests adequate mixing in each $p_i$, with values below 1.2  suggesting convergence \cite{Yang_evolutionbook}. 
-Third, the Effective Sample Size in each replicate ($>1000$[edit]) and diagnostic plots obtained from Tracer (Figure SX-Y) collectively suggest that other parameters also mixed adequately.
+Third, the Effective Sample Size in each replicate ($>1000$[edit]) and diagnostics from Tracer collectively suggest that other parameters also mixed adequately.
 
 The use of different trees sampled from the original MCMC phylogenetic inference yields consistent clustering results. 
 In each comparison, the heatmap comparing probabilistic clustering from the MCC tree and each sampled tree (Figure S X-Y  for A/H1N1 and X- Y for A/H3N2) shows that the clustering patterns are highly similar. 
 For instance, viruses that are inferred to have a high probability of co-clustering in one tree also has a high probability of co-clustering in other trees, indicating that the distinct block structures are preserved. 
 Variation from results among tree samples does exist but are minor. 
-Hence, this sensitivity analysis further verifies that the use of a single MCC tree is reasonable.
+Hence, this sensitivity analysis further verifies that the use of a single MCC tree is fair.
 
 
 
@@ -497,7 +507,7 @@ It is also possible that some antigenically distinct phenotypes emerged, but tho
 Alternatively, very small clusters, especially those inferred at a larger $\kappa=0.3$, might be due to false positives that were detected because of measurement noises or systematic batch effects.
 Regardless, the results that the original boundaries for antigenic transitions at lower $\kappa$ continues to be the same boundaries at higher $\kappa$ consistently suggests that major antigenic transitions do exist. 
 When the priority is to only identify these major transitions, e.g., for antigenic surveillance, the use of a lower $\kappa$ is justified.  
-%I think this point is interesting [not sure if it is completely novel], but do you think the evidence is solid enough and the finding is significant such that this point should be discussed in the abstract and somewhere earlier as well?
+Here, we combine our knowledge to select $\kappa$ that is suitable for each analysis.
 
 
 To achieve adequate MCMC mixing, we developed proposal distributions specific to this model. 
@@ -513,7 +523,6 @@ Second, the model currently conditions on one single tree.
 Extension of this work may consider the use of multiple phylogenetic tree samples, a simultaneous inference of antigenic and phylogenetic inference via sequence and antigenic data, or  an error model on clustering for misplacement of viruses on an inferred phylogeny, even though our results suggested that the use of different trees made little impact to the inference. 
 Third, this work may have implication to vaccine strain selection. 
 This systematic and integrative approach may help with timely antigenic classification. 
-Future evaluation is needed to evaluate its power in inferring emerging antigenic phenotypes. 
 Fourth, building onto this work, it may be possible to develop an effective genotype to phenotype mapping strategy (e.g. with ancestral state reconstruction) to identify mutations associated with antigenic transitions. 
 Investigation and development of potential approaches should warrant effort that is beyond the focus and scope of this work.
 
@@ -540,9 +549,9 @@ Investigation and development of potential approaches should warrant effort that
 
 
 The antigenic data consists of a matrix of HI titer measurements from $n_v$ viruses across $n_s$ sera.  
-A HI titer ($H_{ij}$) measures the strength of cross-reactivity between virus $i$ and serum $j$, where $i=1, ...,  n_v$ and $j=1,...,n_s$, with high value suggesting high reactivity. 
+A HI titer ($H_{ij}$) measures the strength of cross-reactivity between virus $i$ and antibodies in serum $j$, where $i=1, ...,  n_v$ and $j=1,...,n_s$, with high value suggesting high reactivity. 
 The HI titers are usually obtained by serial dilutions, e.g. 40, 80, 160, etc, are commonly summarized as fold changes. These measurements are ordinarily analyzed in the scale corresponding to fold change by transforming the values by log$_2$ \cite{smith_mapping_2004, bedford_integrating_2014}, so that every unit difference suggests a change of titer by 2-fold. 
-These HI titers can be thought of as a set of distances in a sparse $n_v$ by $k$ matrix, and with missing values because often the reactivity of a serum $j$ is not measured against the full set of viruses.
+These HI titers can be thought of as a set of distances in a sparse $n_v$ by $k$ matrix, and with missing values because in Influenza, each serum is often only used against viruses that are currently circulating at the time.
 	%it's an incomplete matrix
 	
 Antigenic Cartography was proposed \cite{smith_mapping_2004} to condensely extract and visualize the main pattern from this matrix of distances. 
@@ -708,7 +717,7 @@ for each $j$ that is an active child node (i.e. $I_j = 1$) of node $i$. Balancin
 	\centering		
 	\includegraphics[width=0.5\textwidth]{figures/lineart/flipAndBalance}
 	\caption{\textbf{Proposal 2 - Flip indicator and balance.} 
-In this antigenic map, the purple cluster represents the new cluster of viruses generated by flipping $I_{30}$ from 0 to 1. In order to retain the absolute location of viruses in the black and pink clusters,  $\mu_{34}$ is adjusted by the value of $\mu_{30}$.
+In this antigenic map, the purple cluster represents the new cluster of viruses generated by flipping $I_{5}$ from 0 to 1. In order to retain the absolute location of viruses in the two rightmost clusters,  $\mu_{3}$ is adjusted by the value of $\mu_{5}$.
 	} 
 	\label{flipAndBalance} 
 \end{figure}
@@ -719,8 +728,8 @@ Proposal 3 switches status between a randomly chosen active $I_i$ with another r
 Unlike proposal 2, substituting an active node by another does not come with the penalty associated with increasing the number of active nodes.
 Thus, proposal 3 could easily be accepted when it swaps a less ideal node with a node that have high evidence to be associated with antigenic transition.
 
-Proposal 4 (Figure~\ref{multistep}) also performs a node substitution operation but swaps both the values of $I_i$ and $\mu_i$ of a randomly chosen active node $i$ with a node $j$ chosen from a small neighborhood around node $i$ in the phylogeny. 
-This proposal is designed to suggest refinement to where a currently inferred cluster transition should be, given that the current suggestion is in node $i$.
+Proposal 4 (Figure S2) also performs a node substitution operation but swaps both the value of $I_i$ and $\mu_i$ of a randomly chosen active node $i$ with those of a node $j$ chosen from a small neighborhood around node $i$ in the phylogeny. 
+This proposal is designed to refine current clustering.
 As a refinement proposal, node $j$ also inherits the value of $\mu_i$, because when designing this proposal, we learned that swapping $\mu$ substantially improves the chance of accepting the move.
 However, instead of naively using the current value of $\mu_j$, which can be any magnitude and direction, this proposal inherits the current value of  $\mu_i$, which is beneficial because this value is likely already near the optimal value of antigenic change.
 Precisely, an active ($I_i=1$) node $i$ is chosen at random.
@@ -730,8 +739,8 @@ The proposal then swaps the value of $I_i$ by $I_j$ and the value of $\mu_i$ by 
 
 
 
-Proposal 5 selects a random dimension of a randomly chosen $\mu_i$ from an active node to perform a random walk while keeping the absolute location of other clusters fixed (Figure~\ref{walkAndBalance})
-This proposal is designed to effectively sample the posterior distribution of $\mu_i$ of an active node. 
+Proposal 5 selects a random dimension of a randomly chosen $\mu_i$ from an active node to perform a random walk while keeping the absolute location of other clusters fixed (Figure S3)
+This proposal is designed to efficiently sample the posterior distribution of $\mu_i$ of an active node. 
 \begin{equation}
 	\mu_i^{*} =  \mu_i + \delta \\
 \end{equation},
@@ -750,7 +759,7 @@ This proposal is sensible for two reasons.
 First, in contrast to proposal 1, here this proposal only focuses on the active nodes, nodes in which their $\mu$ directly influence the antigenic likelihood.
 Instead of proposing from the prior, this proposal performs a random walk.
 When the selected node $i$ is active, $\mu_i$ tends to prefer to be in a specific region, so sampling via random walk should be a more effective sampling strategy than sampling via independent proposal.
-Our empirical evidence (not shown) also suggests that performing a random walk on active node dramatically improves the acceptance rate than sampling from an independent prior proposal.
+Our empirical evidence also suggests that performing a random walk on active node dramatically improves the acceptance rate than sampling from an independent prior proposal.
 Second, similar to proposal 1, empirical evidence (not shown) suggests that balancing the other $\mu$ substantially increases the chance of acceptance, mainly by preserving the relationship between viruses and sera in the antigenic map.
 %random walk operator has dramatically higher chance of acceptance (16.4$\%$) than sampling from independent prior proposal ($0.x\%$).
 %Second, by balancing the active $\mu$'s of the children clusters, we increase the chance of acceptance ( equation \ref{flipI_equation} + \ref{muBalance-equation} = 26.1$\%$ vs. equation \ref{flipI_equation} only =16.4$\%$).
@@ -771,7 +780,7 @@ This proposal is designed to potentially replace one active node by two to form 
 The swap step is the same as that in proposal 4.
 In the flip step, the proposal searches for the union of the neighbors from the existing node and the neighbors from the new node.
 Taking the union of the sets allows a backward move to be always possible.
-Each of the node in this union set has an equal chance to be selected (Figure~\ref{jointMultistep}).
+Each of the node in this union set has an equal chance to be selected (Figure S4).
 
 
 
@@ -788,7 +797,7 @@ To minimize the impact of this change, we propose to couple this move with scali
 
 
 
-We implemented our clustering method in BEAST v1.8.0 and is available for download at http://BEAST.
+We implemented our clustering method in BEAST v1.8.0 and is available for download at https://github.com/blab/antigenic-clustering.
 MCMC outputs are summarized in tables and parameters that are associated with the tree (eg. cluster labels, antigenic change, virus location) are also integrated into the output NEXUS-formatted phylogenetic tree file to enable convenient visualization in FigTree \cite{FIGTREE}.
 
 
@@ -804,7 +813,7 @@ First, these databases were queried by matching strain names, e.g.\ A/HongKong/1
 Second, sequences were aligned by using MUSCLE v3.7 under default settings \cite{MUSCLE}.
 Third, BEAST\cite{BEAST17} was used to perform phylogenetic inference on the A/H3N2 and A/H1N1 datasets.
 In these analyses, the SRD06 nucleotide substitution model \cite{Shapiro06}, a coalescent demographic model with constant effective population size and a strict molecular clock across branches, was used.
-The MCMC sampled 60 million steps and every 50,000th steps was printed.
+The MCMC run sampled 60 million steps and every 50,000th steps was printed.
 Allowing for a burn-in of 10 million steps, a total sample of 2000 trees were kept for subsequent clustering analysis.
 Finally, for each analysis, we generated the MCC tree by using TreeAnnotator version 1.8.0.
 
@@ -820,13 +829,13 @@ Recall that the MDS precision is a tuning parameter used to control how much mea
 After some initial tests, we considered the $\kappa$ at 0.05, 0.1, and 0.15 for A/H3N2 and 0.1 and 0.3 for A/H1N1 that give sensible number of detected viral clusters.  
 Each MCMC was run for 500 million steps and trees were sampled at every 200,000 steps. 
 Allowing for a burn-in of 50 million steps, a total of 2001 samples were kept.
-We summarized the MCMC outputs by several ways. 
+We summarized the MCMC outputs in several ways. 
 First, we used FigTree v1.4.2 to visualize clusters across different  MCMC samples. 
 Second, we plotted the antigenic maps of different samples and annotated the viral clusters with path of antigenic transitions. 
 Third, we produced heatmaps to summarize the variation in our probabilistic cluster assignment. 
-For direct correspondence to the phylogenetic tree displayed in FigTree, the viruses were sorted by the order as appeared in the FigTree.
-Heatmap is a very useful summary of clustering because it ultimately captures the probability that each pair of virus shares the same clusters, hence visually presenting the major clustering patterns among all viruses, even when the exact transition branch cannot be inferred with high confidence. %a sentence about why heatmap is highly appropriate 
-Fourth, we performed convergence analysis by (1)inspecting convergence diagnostic plots of MCMC outputs generated by Tracer v1.5, (2)comparing across replicates the probabilities that each node is active, which collectively are the main parameters of interest, and (3)computing the Gelman-Rubin statistics on these parameters. 
+The viruses were sorted by the order as appeared in the FigTree.
+Heatmap is a very useful summary of clustering because it ultimately captures the probability that each pair of viruses share the same clusters, hence visually presenting the major clustering patterns among all viruses, even when the exact transition branches cannot be inferred with high confidence. %a sentence about why heatmap is highly appropriate 
+Fourth, we performed convergence analysis by (1)inspecting convergence diagnostic plots of MCMC outputs generated by Tracer v1.5, (2)comparing across replicates the probabilities that each node is active, which are the main parameters of interest, and (3)computing the Gelman-Rubin statistics on these parameters. 
 The probability that node $i$ is active ($p_i$) is computed by taking the average of the realized samples of $I_i$ (i.e. $I_i^b$, for $b=1,...B$), where $B$ is the number of stored MCMC samples.
 \begin{equation}
  \hat{p_i} = \frac{1}{N} \sum_{b=1}^{B} I(I_i^b  = 1).
@@ -841,16 +850,16 @@ The results are available for download at http://github....
 
 % rediscovering clusters via simulations.
 
-To evaluate the clustering method, we simulated clusters on viruses and antigenic data based on viruses from the more computationally challenging A/H3N2 phylogeny.
+To evaluate the clustering method, we simulated antigenic data and clusters on viruses based on viruses from the more computationally challenging A/H3N2 phylogeny.
 Step 1 generates 15 active nodes on the MCC tree. 
 In this procedure, a node is added one at a time from the set of remaining inactive nodes.
 At each step, a random node is added to the set of active nodes.
-This node is added to the set of active nodes only if the phylogeny is partitioned in a way such that the smallest cluster has at least 10 viruses. 
+This node is added to the set of active nodes only if the phylogeny is partitioned in a way such that the smallest cluster still has at least 10 viruses. 
 Otherwise, this step is repeated until the candidate node satisfies this minimum size condition.
 At the end, the set of active nodes generates a total of 16 clusters each with a minimum cluster size of 10 viruses.
-This number of clusters is in the range of the number of previously inferred clusters for A/H3N2\cite{smith_mapping_2004}. 
+This number of clusters approximates the number of previously inferred clusters for A/H3N2\cite{smith_mapping_2004}. 
 Step 2 simulates the antigenic data.
-Five sera are simulated for each cluster to produce a total of 80 sera, which is considerably smaller than the number of sera (519) from the real data for A/H3N2, but it already had enough information for the inference.
+Five sera are simulated for each cluster to produce a total of 80 sera, which is considerably smaller than the 519 sera from the real data for A/H3N2, but it already had enough information for the inference.
 For each virus $i$ and serum $j$, the log$_2$ observed titer was simulated from 
 \begin{equation}
  \label{simulationEquation}
@@ -859,7 +868,7 @@ H_{ij} \sim N(  10 -  2 \omega(i,j) ,  \sigma^2 )     ,
 where $\omega_{ij}$ is a distance function that calculates the number of cluster transitions  between virus $i$ and the reference virus of serum $j$ on the phylogeny.
 Equation (\ref{simulationEquation}) models the realistic scenario that the strength of reactivity between virus $i$ and serum $j$ decreases as the number of major cluster transitions between virus $i$ and the reference virus in serum $j$ increases.
 For example, the expected log$_2$ titer for virus $i$ and serum $j$ with reference virus from the same cluster is 10, while the expected log$_2$ titer for virus $i$ and serum $j$ with reference virus from a cluster separated by 2 cluster transitions is 6.
-$\sigma^2 = 1$ is used to model the scenario that a log$_2$ titer measurement has a nontrivial amount of measurement noise (Figure \ref{SimulationNoise}) around its expected titer value.
+$\sigma^2 = 1$ is used to model the scenario that a log$_2$ titer measurement has a nontrivial amount of measurement noise (Figure S5) around its expected titer value.
 In addition, the date (in year) of each serum was simulated because it is required by the Diffusion prior for serum.
 Because it is reasonable to assume that each serum is made from a virus in the phylogeny, the simulation draws a random sample from the list of dates of viruses in the cluster to be the date of a serum in that cluster.
 Step 3 generates missing data from the complete matrix of antigenic data to approximate the reality that our datasets often contain missing data.
@@ -873,16 +882,16 @@ First, we performed antigenic clustering on each simulated dataset.
 We ran each analysis for 50 million MCMC iterations and printed every 50,000th iteration.
 With the first 10\% of outputs used as burn-ins, each analysis consists of $B=901$ samples.
 Second, we estimated $p_i$ for each $i$.
-Third, for each degree of data completion rate, we averaged the results over replicates and plotted the Receiver Operating Curve (ROC) of true positives vs. false positives as a function of detection threshold ($\lambda$), which is the probability threshold used in calling a node significant.
+Third, for each degree of data completion rate, we averaged the results over replicates and plotted the Receiver Operating Curve (ROC) of true positives vs. false positives as a function of detection threshold ($\lambda$), which calls a node significant if $p_i > \lambda$.
 Sensitivity is defined as the percent of true positives inferred, averaged over replicates. By default, $\lambda=0.5$ was used as the threshold for detection.
 %heatmap?
 
 
 Results from computer simulation suggest that our clustering method effectively infers true antigenic transitions (Figure \ref{ROCSimulation}). 
-Under the default $\kappa=0.1$, at the 50\% data completion, our method detects an average of 14.x of the 15 simulated transitions (sensitivity= 9x\%) while controlling the average number of false positives to $<1$. 
+Under the default $\kappa=0.1$, at the 50\% data completion, our method detects an average of 14.5 of the 15 simulated transitions (sensitivity= 97\%) while controlling the average number of false positives to 1. 
 As a true positive is defined stringently by the exact matching of a node that leads to an antigenic transition, this result comes as a welcome surprise because before the simulation it is not understood whether the method can detect the exact node or can only detect up to a proximity of where the true transition node is.
-Interestingly, sensitivity remains almost as high at lower data completion rates (average true positives = $\sim$14 and $\sim$14 for data completion at 20\% and 10\%, respectively) with similarly low average false positives. 
-However, the average number of true positives decreases dramatically to $\sim$8 when the data completion decreases to 5\%. 
+Interestingly, sensitivity remains almost as high at lower data completion rates, with average true positives = 14.2 and 14.4 for data completion at 20\% and 10\%, respectively, and with similarly low average false positives at 0.5 and 0.6, respectively. 
+However, the average number of true positives decreases dramatically to 9.2 when the data completion decreases to 5\%. 
 
 
 
@@ -891,9 +900,9 @@ However, the average number of true positives decreases dramatically to $\sim$8 
 	\centering		
 	\includegraphics[width=0.7\textwidth]{figures/custom/avgTrueVsFalsePositives-completionRate-10replicates}
 	\caption{\textbf{Receiver Operating Characteristic curves summarizing the effect of varying the data completion rates on the performance of inferring antigenic clusters.} 
- The results were averaged over 5 replicates.	
+ The results were averaged over 10 replicates.	
  In each replicate, the total number of simulated transitions is 15.
-For each line, open circles from left to right represents the ROC values at decreasing detection threshold of p=1,0.9, 0.8, ...,0.1, and the shaded circle is the ROC value at p=0.5.
+For each line, open circles from left to right represents the ROC values at decreasing detection threshold of $\lambda=1,0.9, 0.8, ...,0.1$, and the shaded circle is the ROC value at $\lambda=0.5$.
 Here, true positives and false positives are summarized as absolute numbers instead of percentages to more responsibly reflect the underlying simulation condition.
 	 		} 
 	
@@ -906,12 +915,10 @@ Here, true positives and false positives are summarized as absolute numbers inst
 
 
 Setting $\kappa$ to a higher value is beneficial when data completion is low but not when it is high (Figure \ref{ROCSimulation}). 
-By increasing $\kappa$ from 0.1 to 0.3 to encourage detection, the number of true positives jumps substantially from $\sim8$ to $\sim$13.5 even at the 5\% data completion. 
-Setting a higher $\kappa$ also increases the average number of false positives from $\sim0.5$ to $\sim$1.5. 
-The true to false positive trade-off suggests that the use of a higher $\kappa$ is justified. 
-% now took away from the graph.
+By increasing $\kappa$ from 0.1 to 0.3 to encourage detection, the number of true positives jumps substantially from 9.2 to 13.4 even at the 5\% data completion, but with a small increase in the average number of false positives from 0.5 to 1.1.
+In this case, the gain in true positives seems to outweigh the slight gain in false positives.
 However, setting a higher $\kappa$ is not preferable when the data completion rate is high, because this would also detect more noises. 
-At 50\% data completion, setting $\kappa$ from 0.1 to 0.3 not only reduces the number of true positives from $\sim$14.5 to $\sim$13 but also increases the number of false positives from $<1$ to $\sim$ 5. 
+At 50\% data completion, setting $\kappa$ from 0.1 to 0.3 not only reduces the number of true positives from 14.5 to 13.4 but also increases the number of false positives from 1 to 4.7. 
 This may be due to  spurious association from non-random observed measurement noises occurring by chance even though our simulation generates completely random noises. 
 In this case, the use of a lower $\kappa$ effectively guards against false positives.
 

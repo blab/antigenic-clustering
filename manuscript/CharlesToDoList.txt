@@ -1,12 +1,64 @@
-July 23, 2015
+August 2, 2015
+
+
+Charles - NEXT:
+  - made change to the manuscript [done]
+  - organize the Supplementary materials [done]
+  - compute some numbers 
+  	- simulated data analysis  [done]
+  	- sensitivity analysis
+  	- update the Supplementary materials
+  - copy the latest version of the scripts to the github folders 
+
+  - computation support for Trevor in generating the figures  
+  - resolve beast version differences
+
+  
+Because the default kappa changes, I need to regenerate the stacked plot,
+Figure S6.
+
+		
+Remaining tasks: 
+A. Trevor generates the figures & finishes the text in the results section
+	Analysis:
+		- I will also assist in coding & providing the data that he needs
+	Text
+		- He can drop anything he no longer sees fit in the current version that I wrote
+		- He will write up his interpretation using the figures that he is generating
+
+
+B. Finish all other sections of the manuscript to the best of my ability
+	- Figure 2,3,4 needs to be regenerated
+	- re-read and revise the manuscript
+		- focus: finish up the things on the side first (anything except the result section that depends on Trevor)
+		- make small edit
+	- note things on the tex document that Trevor needs to look at
+	- Prepare supplementary materials
+	
+C. Trevor will make a grand revision on the manuscript
+
+D. File sharing (to github and Dropbox (or harddrive to harddrive))
+	- scripts, data
+	- from then on, every change to the script will be made on those folders
+
+
+E. Send to collaborators
+		
+F. Beast code
+	- decide whether we need to migrate to 2.0 
+	- resolve the messy current state of different versions
+
+
+
+=========================================================================================
+In more details for some of the tasks....
 
 Task:
 - run beast to get those evaluations: (take maybe a week)
 	- more runs for simulation   [done]
-	- more runs for MCMC diagnostics [running]
+	- more runs for MCMC diagnostics [running - will be completed by Tuesday morning]
 
 
-TO DO:
 
 0.2: set run for H1N1 at higher mds  [done]
 	- look at clustering   [remind Trevor to look at it on Monday]
@@ -17,15 +69,16 @@ TO DO:
 	- h3n2 kappa = 0.1
 
 
-0c - Consensus clustering for the trees
+0c - Consensus clustering for the trees	[need to wait for the H1N1 strains from Trevor]  
 
 0d - but what about the antigenic map?
 	- also use consensus?
+	
 
 1a. manuscript text
     - revise results section [done]
-    - write proper description for each figure in the manuscript
-	- note which figures I will need to regenerate
+    - write proper description for each figure in the manuscript [did what I had to do so far]
+	- note which figures I will need to regenerate [done]
 
 1b. prepare supplementary materials   
 	- redraw the MCMC schematic diagram figures [done]
@@ -34,12 +87,11 @@ TO DO:
 	- note which figures I will need to regenerate when I see the new results, and find the scripts for it
 
 
-3. locate my codes, run files, and scripts and results [in progress]	
+3. locate my codes, run files, and scripts and results [done]
 
 
-2. fill in the numbers from the manuscript
+2. fill in the numbers from the manuscript [cancel - maybe no need]
 	- note the list of numbers to compute
-
 	- need to look at the scripts 
 	- write codes to get those numbers I want
 
@@ -47,7 +99,7 @@ TO DO:
 
 4. Text
 	- fill in the reference
-	- do a full manuscript revision to figure
+	- do a full manuscript revision to figure [done]
 	
 	
 5. do any unfinished section, along with Trevor's input
