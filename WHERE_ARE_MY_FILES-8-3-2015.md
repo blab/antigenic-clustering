@@ -71,14 +71,17 @@ Main analysis:
 
 
  Figure stackedMuPlot (#5):
- 	- script: /Users/charles/Documents/research/antigenic/GenoPheno/antigenic-clustering/code/analysisScripts/stacked-muplot.R
-	- figure: weird, I didn't save it out directly. 
-!		- I can only find the finished product here: /Users/charles/Documents/research/antigenic/GenoPheno/antigenic-clustering/manuscript/figures/custom/stackedMuPlot.pdf
+ 	- script: /Users/charles/Documents/research/antigenic/GenoPheno/antigenic-clustering/code/analysisScripts/stacked-muplot-8-3-2015.R
+ 		- figure: /Users/charles/Documents/research/antigenic/GenoPheno/driver/clustering/analysisManuscript7-31-2015/mu-stacked-h3n2-h1n1.pdf
 
  Figure mu parameter plots (Supp):
- 	- H3N2 script: /Users/charles/Documents/research/antigenic/GenoPheno/antigenic-clustering/code/analysisScripts/H3N2-investigateExcisionPointsNewParametrization-2-12-2015.R
-	- H1N1 script: /Users/charles/Documents/research/antigenic/GenoPheno/antigenic-clustering/code/analysisScripts/H1N1-investigateExcisionPointsNewParametrization-2-12-2015.R
-!	- figure:
+ 	- H3N2 and H1N1 script: /Users/charles/Documents/research/antigenic/GenoPheno/antigenic-clustering/code/analysisScripts/stacked-muplot-8-3-2015.R
+ 		- obsolete version: /Users/charles/Documents/research/antigenic/GenoPheno/antigenic-clustering/code/analysisScripts/H3N2-investigateExcisionPointsNewParametrization-2-12-2015.R
+		- obsolete version: /Users/charles/Documents/research/antigenic/GenoPheno/antigenic-clustering/code/analysisScripts/H1N1-investigateExcisionPointsNewParametrization-2-12-2015.R
+	- figure: 
+		- H1N1 /Users/charles/Documents/research/antigenic/GenoPheno/driver/clustering/analysisManuscript7-31-2015/H1N1/mu/mu-Euclidean-mds0_3.pdf
+		- H3N2 /Users/charles/Documents/research/antigenic/GenoPheno/driver/clustering/analysisManuscript7-31-2015/H3N2/mu/mu-Euclidean-mds0_1.pdf
+		
 
  Figure Consensus tree:
  	- scripts:	/Users/charles/Documents/research/antigenic/GenoPheno/antigenic-clustering/code/analysisScripts/pythonScripts_2_7/treeConsensus.py

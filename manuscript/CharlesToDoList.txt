@@ -2,20 +2,9 @@ August 2, 2015
 
 
 Charles - NEXT:
-  - made change to the manuscript [done]
-  - organize the Supplementary materials [done]
-  - compute some numbers 
-  	- simulated data analysis  [done]
-  	- sensitivity analysis
-  	- update the Supplementary materials
-  - copy the latest version of the scripts to the github folders 
-
   - computation support for Trevor in generating the figures  
   - resolve beast version differences
-
-  
-Because the default kappa changes, I need to regenerate the stacked plot,
-Figure S6.
+  - sensitivity analysis  (need to wait until Tuesday morning)
 
 		
 Remaining tasks: 
@@ -27,19 +16,24 @@ A. Trevor generates the figures & finishes the text in the results section
 		- He will write up his interpretation using the figures that he is generating
 
 
-B. Finish all other sections of the manuscript to the best of my ability
+B. Finish all other sections of the manuscript (do what I can)
 	- Figure 2,3,4 needs to be regenerated
-	- re-read and revise the manuscript
-		- focus: finish up the things on the side first (anything except the result section that depends on Trevor)
-		- make small edit
-	- note things on the tex document that Trevor needs to look at
+	- Regenerate Figure 5 (h3n2 kappa = 0.1, h1n1 kappa = 0.3) [done]
+	- re-read and revise the manuscript [done]
+		- focus: finish up the things on the side first (anything except the result section that depends on Trevor) [ok]
+		- make small edit [done]
+	- note things on the tex document that Trevor needs to look at [done]
 	- Prepare supplementary materials
+		- organize the supplementary materials [done]
+		- regenerate the figures, once the runs complete
 	
 C. Trevor will make a grand revision on the manuscript
 
 D. File sharing (to github and Dropbox (or harddrive to harddrive))
-	- scripts, data
-	- from then on, every change to the script will be made on those folders
+	- scripts [done] 
+		- from now on, every change to the script will be made on those folders [okay]
+	- data  
+
 
 
 E. Send to collaborators
@@ -48,6 +42,19 @@ F. Beast code
 	- decide whether we need to migrate to 2.0 
 	- resolve the messy current state of different versions
 
+
+
+====================================================================================
+
+
+  - made change to the manuscript [done]
+  - organize the Supplementary materials [done]
+  - compute some numbers 
+  	- simulated data analysis  [done]
+  	- update the Supplementary materials [done]
+  	- update the stacked plot and Figure S6 [done]
+  - copy the latest version of the scripts to the github folders  [done]
+  
 
 
 =========================================================================================
