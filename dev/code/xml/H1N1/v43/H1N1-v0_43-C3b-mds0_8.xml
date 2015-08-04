@@ -1,0 +1,1150 @@
+<?xml version="1.0" standalone="yes"?>
+<beast>
+
+<!-- Loading the tree -->
+	<taxa id="taxa">
+		<taxon id="A/Annecy/2013/2009">
+			<date value="2009" direction="forwards" units="years"/>
+			<attr name="antigenic">1.0 1.0</attr>
+		</taxon>
+		<taxon id="A/Arizona/14/1978">
+			<date value="1978" direction="forwards" units="years"/>
+			<attr name="antigenic">1.0 1.0</attr>
+		</taxon>
+		<taxon id="A/Bangkok/1544/2004">
+			<date value="2004" direction="forwards" units="years"/>
+			<attr name="antigenic">1.0 1.0</attr>
+		</taxon>
+		<taxon id="A/Bayern/7/1995">
+			<date value="1995" direction="forwards" units="years"/>
+			<attr name="antigenic">1.0 1.0</attr>
+		</taxon>
+		<taxon id="A/Beijing/262/1995">
+			<date value="1995" direction="forwards" units="years"/>
+			<attr name="antigenic">1.0 1.0</attr>
+		</taxon>
+		<taxon id="A/Berlin/59/2008">
+			<date value="2008" direction="forwards" units="years"/>
+			<attr name="antigenic">1.0 1.0</attr>
+		</taxon>
+		<taxon id="A/Brazil/11/1978">
+			<date value="1978" direction="forwards" units="years"/>
+			<attr name="antigenic">1.0 1.0</attr>
+		</taxon>
+		<taxon id="A/Brisbane/59/2007">
+			<date value="2007" direction="forwards" units="years"/>
+			<attr name="antigenic">1.0 1.0</attr>
+		</taxon>
+		<taxon id="A/California/45/1978">
+			<date value="1978" direction="forwards" units="years"/>
+			<attr name="antigenic">1.0 1.0</attr>
+		</taxon>
+		<taxon id="A/Chile/1/1983">
+			<date value="1983" direction="forwards" units="years"/>
+			<attr name="antigenic">1.0 1.0</attr>
+		</taxon>
+		<taxon id="A/Dakar/88/2003">
+			<date value="2003" direction="forwards" units="years"/>
+			<attr name="antigenic">1.0 1.0</attr>
+		</taxon>
+		<taxon id="A/Denmark/22/2005">
+			<date value="2005" direction="forwards" units="years"/>
+			<attr name="antigenic">1.0 1.0</attr>
+		</taxon>
+		<taxon id="A/Denmark/3/2005">
+			<date value="2005" direction="forwards" units="years"/>
+			<attr name="antigenic">1.0 1.0</attr>
+		</taxon>
+		<taxon id="A/Denmark/56/2003">
+			<date value="2003" direction="forwards" units="years"/>
+			<attr name="antigenic">1.0 1.0</attr>
+		</taxon>
+		<taxon id="A/Denmark/86/2003">
+			<date value="2003" direction="forwards" units="years"/>
+			<attr name="antigenic">1.0 1.0</attr>
+		</taxon>
+		<taxon id="A/Egypt/10/2007">
+			<date value="2007" direction="forwards" units="years"/>
+			<attr name="antigenic">1.0 1.0</attr>
+		</taxon>
+		<taxon id="A/Egypt/136/2005">
+			<date value="2005" direction="forwards" units="years"/>
+			<attr name="antigenic">1.0 1.0</attr>
+		</taxon>
+		<taxon id="A/Egypt/96/2002">
+			<date value="2002" direction="forwards" units="years"/>
+			<attr name="antigenic">1.0 1.0</attr>
+		</taxon>
+		<taxon id="A/England/2/2002">
+			<date value="2002" direction="forwards" units="years"/>
+			<attr name="antigenic">1.0 1.0</attr>
+		</taxon>
+		<taxon id="A/England/333/1980">
+			<date value="1980" direction="forwards" units="years"/>
+			<attr name="antigenic">1.0 1.0</attr>
+		</taxon>
+		<taxon id="A/Finland/4/2007">
+			<date value="2007" direction="forwards" units="years"/>
+			<attr name="antigenic">1.0 1.0</attr>
+		</taxon>
+		<taxon id="A/Florida/4/2004">
+			<date value="2004" direction="forwards" units="years"/>
+			<attr name="antigenic">1.0 1.0</attr>
+		</taxon>
+		<taxon id="A/Fukushima/141/2006">
+			<date value="2006" direction="forwards" units="years"/>
+			<attr name="antigenic">1.0 1.0</attr>
+		</taxon>
+		<taxon id="A/Ghana/152/2008">
+			<date value="2008" direction="forwards" units="years"/>
+			<attr name="antigenic">1.0 1.0</attr>
+		</taxon>
+		<taxon id="A/Ghana/163/2008">
+			<date value="2008" direction="forwards" units="years"/>
+			<attr name="antigenic">1.0 1.0</attr>
+		</taxon>
+		<taxon id="A/Ghana/2/2008">
+			<date value="2008" direction="forwards" units="years"/>
+			<attr name="antigenic">1.0 1.0</attr>
+		</taxon>
+		<taxon id="A/Ghana/9/2008">
+			<date value="2008" direction="forwards" units="years"/>
+			<attr name="antigenic">1.0 1.0</attr>
+		</taxon>
+		<taxon id="A/Ghana/FS-09-718/2009">
+			<date value="2009" direction="forwards" units="years"/>
+			<attr name="antigenic">1.0 1.0</attr>
+		</taxon>
+		<taxon id="A/Ghana/FS-09-791/2009">
+			<date value="2009" direction="forwards" units="years"/>
+			<attr name="antigenic">1.0 1.0</attr>
+		</taxon>
+		<taxon id="A/Gyeonggibuk/4500/2008">
+			<date value="2008" direction="forwards" units="years"/>
+			<attr name="antigenic">1.0 1.0</attr>
+		</taxon>
+		<taxon id="A/HongKong/1252/2000">
+			<date value="2000" direction="forwards" units="years"/>
+			<attr name="antigenic">1.0 1.0</attr>
+		</taxon>
+		<taxon id="A/HongKong/18106/2009">
+			<date value="2009" direction="forwards" units="years"/>
+			<attr name="antigenic">1.0 1.0</attr>
+		</taxon>
+		<taxon id="A/HongKong/1856/2008">
+			<date value="2008" direction="forwards" units="years"/>
+			<attr name="antigenic">1.0 1.0</attr>
+		</taxon>
+		<taxon id="A/HongKong/1870/2008">
+			<date value="2008" direction="forwards" units="years"/>
+			<attr name="antigenic">1.0 1.0</attr>
+		</taxon>
+		<taxon id="A/HongKong/1988/2009">
+			<date value="2009" direction="forwards" units="years"/>
+			<attr name="antigenic">1.0 1.0</attr>
+		</taxon>
+		<taxon id="A/HongKong/2387/2007">
+			<date value="2007" direction="forwards" units="years"/>
+			<attr name="antigenic">1.0 1.0</attr>
+		</taxon>
+		<taxon id="A/HongKong/2613/2007">
+			<date value="2007" direction="forwards" units="years"/>
+			<attr name="antigenic">1.0 1.0</attr>
+		</taxon>
+		<taxon id="A/HongKong/2652/2006">
+			<date value="2006" direction="forwards" units="years"/>
+			<attr name="antigenic">1.0 1.0</attr>
+		</taxon>
+		<taxon id="A/HongKong/3176/2008">
+			<date value="2008" direction="forwards" units="years"/>
+			<attr name="antigenic">1.0 1.0</attr>
+		</taxon>
+		<taxon id="A/HongKong/33597/2009">
+			<date value="2009" direction="forwards" units="years"/>
+			<attr name="antigenic">1.0 1.0</attr>
+		</taxon>
+		<taxon id="A/HongKong/34079/2009">
+			<date value="2009" direction="forwards" units="years"/>
+			<attr name="antigenic">1.0 1.0</attr>
+		</taxon>
+		<taxon id="A/HongKong/35/2006">
+			<date value="2006" direction="forwards" units="years"/>
+			<attr name="antigenic">1.0 1.0</attr>
+		</taxon>
+		<taxon id="A/HongKong/4580/2004">
+			<date value="2004" direction="forwards" units="years"/>
+			<attr name="antigenic">1.0 1.0</attr>
+		</taxon>
+		<taxon id="A/HongKong/4596/2004">
+			<date value="2004" direction="forwards" units="years"/>
+			<attr name="antigenic">1.0 1.0</attr>
+		</taxon>
+		<taxon id="A/HongKong/4922/2005">
+			<date value="2005" direction="forwards" units="years"/>
+			<attr name="antigenic">1.0 1.0</attr>
+		</taxon>
+		<taxon id="A/HongKong/948/2006">
+			<date value="2006" direction="forwards" units="years"/>
+			<attr name="antigenic">1.0 1.0</attr>
+		</taxon>
+		<taxon id="A/Hungary/2/2003">
+			<date value="2003" direction="forwards" units="years"/>
+			<attr name="antigenic">1.0 1.0</attr>
+		</taxon>
+		<taxon id="A/Iceland/123/2003">
+			<date value="2003" direction="forwards" units="years"/>
+			<attr name="antigenic">1.0 1.0</attr>
+		</taxon>
+		<taxon id="A/Iceland/8064/2009">
+			<date value="2009" direction="forwards" units="years"/>
+			<attr name="antigenic">1.0 1.0</attr>
+		</taxon>
+		<taxon id="A/Iceland/8599/2009">
+			<date value="2009" direction="forwards" units="years"/>
+			<attr name="antigenic">1.0 1.0</attr>
+		</taxon>
+		<taxon id="A/Incheon/2647/2007">
+			<date value="2007" direction="forwards" units="years"/>
+			<attr name="antigenic">1.0 1.0</attr>
+		</taxon>
+		<taxon id="A/Incheon/4532/2008">
+			<date value="2008" direction="forwards" units="years"/>
+			<attr name="antigenic">1.0 1.0</attr>
+		</taxon>
+		<taxon id="A/India/6263/1980">
+			<date value="1980" direction="forwards" units="years"/>
+			<attr name="antigenic">1.0 1.0</attr>
+		</taxon>
+		<taxon id="A/Johannesburg/141/2007">
+			<date value="2007" direction="forwards" units="years"/>
+			<attr name="antigenic">1.0 1.0</attr>
+		</taxon>
+		<taxon id="A/Johannesburg/28/2005">
+			<date value="2005" direction="forwards" units="years"/>
+			<attr name="antigenic">1.0 1.0</attr>
+		</taxon>
+		<taxon id="A/Johannesburg/452/2005">
+			<date value="2005" direction="forwards" units="years"/>
+			<attr name="antigenic">1.0 1.0</attr>
+		</taxon>
+		<taxon id="A/Johannesburg/5/2002">
+			<date value="2002" direction="forwards" units="years"/>
+			<attr name="antigenic">1.0 1.0</attr>
+		</taxon>
+		<taxon id="A/Johannesburg/67/2007">
+			<date value="2007" direction="forwards" units="years"/>
+			<attr name="antigenic">1.0 1.0</attr>
+		</taxon>
+		<taxon id="A/Johannesburg/82/1996">
+			<date value="1996" direction="forwards" units="years"/>
+			<attr name="antigenic">1.0 1.0</attr>
+		</taxon>
+		<taxon id="A/Lackland/3/1978">
+			<date value="1978" direction="forwards" units="years"/>
+			<attr name="antigenic">1.0 1.0</attr>
+		</taxon>
+		<taxon id="A/Lackland/7/1978">
+			<date value="1978" direction="forwards" units="years"/>
+			<attr name="antigenic">1.0 1.0</attr>
+		</taxon>
+		<taxon id="A/Latvia/686/2002">
+			<date value="2002" direction="forwards" units="years"/>
+			<attr name="antigenic">1.0 1.0</attr>
+		</taxon>
+		<taxon id="A/Madagascar/2121/2007">
+			<date value="2007" direction="forwards" units="years"/>
+			<attr name="antigenic">1.0 1.0</attr>
+		</taxon>
+		<taxon id="A/Madagascar/57794/2000">
+			<date value="2000" direction="forwards" units="years"/>
+			<attr name="antigenic">1.0 1.0</attr>
+		</taxon>
+		<taxon id="A/Madagascar/6054/2009">
+			<date value="2009" direction="forwards" units="years"/>
+			<attr name="antigenic">1.0 1.0</attr>
+		</taxon>
+		<taxon id="A/Madagascar/6081/2009">
+			<date value="2009" direction="forwards" units="years"/>
+			<attr name="antigenic">1.0 1.0</attr>
+		</taxon>
+		<taxon id="A/Marrakech/510/2009">
+			<date value="2008" direction="forwards" units="years"/>
+			<attr name="antigenic">1.0 1.0</attr>
+		</taxon>
+		<taxon id="A/Marseille/1148/2009">
+			<date value="2009" direction="forwards" units="years"/>
+			<attr name="antigenic">1.0 1.0</attr>
+		</taxon>
+		<taxon id="A/Mauritius/403/2008">
+			<date value="2008" direction="forwards" units="years"/>
+			<attr name="antigenic">1.0 1.0</attr>
+		</taxon>
+		<taxon id="A/Mauritius/543/2007">
+			<date value="2007" direction="forwards" units="years"/>
+			<attr name="antigenic">1.0 1.0</attr>
+		</taxon>
+		<taxon id="A/Menya/1386/2009">
+			<date value="2009" direction="forwards" units="years"/>
+			<attr name="antigenic">1.0 1.0</attr>
+		</taxon>
+		<taxon id="A/Minsk/179/2008">
+			<date value="2008" direction="forwards" units="years"/>
+			<attr name="antigenic">1.0 1.0</attr>
+		</taxon>
+		<taxon id="A/Montpellier/2051/2009">
+			<date value="2009" direction="forwards" units="years"/>
+			<attr name="antigenic">1.0 1.0</attr>
+		</taxon>
+		<taxon id="A/Morocco/275/2004">
+			<date value="2003" direction="forwards" units="years"/>
+			<attr name="antigenic">1.0 1.0</attr>
+		</taxon>
+		<taxon id="A/Moscow/2/2009">
+			<date value="2009" direction="forwards" units="years"/>
+			<attr name="antigenic">1.0 1.0</attr>
+		</taxon>
+		<taxon id="A/Netherlands/128/2004">
+			<date value="2004" direction="forwards" units="years"/>
+			<attr name="antigenic">1.0 1.0</attr>
+		</taxon>
+		<taxon id="A/Netherlands/345/2007">
+			<date value="2007" direction="forwards" units="years"/>
+			<attr name="antigenic">1.0 1.0</attr>
+		</taxon>
+		<taxon id="A/NewCaledonia/20/1999">
+			<date value="1999" direction="forwards" units="years"/>
+			<attr name="antigenic">1.0 1.0</attr>
+		</taxon>
+		<taxon id="A/Paraguay/61/2009">
+			<date value="2009" direction="forwards" units="years"/>
+			<attr name="antigenic">1.0 1.0</attr>
+		</taxon>
+		<taxon id="A/Paris/577/2007">
+			<date value="2007" direction="forwards" units="years"/>
+			<attr name="antigenic">1.0 1.0</attr>
+		</taxon>
+		<taxon id="A/Paris/781/2008">
+			<date value="2008" direction="forwards" units="years"/>
+			<attr name="antigenic">1.0 1.0</attr>
+		</taxon>
+		<taxon id="A/Pennsylvania/1/2007">
+			<date value="2007" direction="forwards" units="years"/>
+			<attr name="antigenic">1.0 1.0</attr>
+		</taxon>
+		<taxon id="A/Perth/200/2008">
+			<date value="2008" direction="forwards" units="years"/>
+			<attr name="antigenic">1.0 1.0</attr>
+		</taxon>
+		<taxon id="A/Peru/1169/2007">
+			<date value="2007" direction="forwards" units="years"/>
+			<attr name="antigenic">1.0 1.0</attr>
+		</taxon>
+		<taxon id="A/Peru/1621/1999">
+			<date value="1999" direction="forwards" units="years"/>
+			<attr name="antigenic">1.0 1.0</attr>
+		</taxon>
+		<taxon id="A/Peru/1798/1999">
+			<date value="1999" direction="forwards" units="years"/>
+			<attr name="antigenic">1.0 1.0</attr>
+		</taxon>
+		<taxon id="A/Poitiers/2168/2003">
+			<date value="2003" direction="forwards" units="years"/>
+			<attr name="antigenic">1.0 1.0</attr>
+		</taxon>
+		<taxon id="A/Rabat/109/2009">
+			<date value="2008" direction="forwards" units="years"/>
+			<attr name="antigenic">1.0 1.0</attr>
+		</taxon>
+		<taxon id="A/Reunion/1409/2003">
+			<date value="2003" direction="forwards" units="years"/>
+			<attr name="antigenic">1.0 1.0</attr>
+		</taxon>
+		<taxon id="A/RheinlandPfalz/34/2003">
+			<date value="2003" direction="forwards" units="years"/>
+			<attr name="antigenic">1.0 1.0</attr>
+		</taxon>
+		<taxon id="A/Seychelles/2239/2008">
+			<date value="2008" direction="forwards" units="years"/>
+			<attr name="antigenic">1.0 1.0</attr>
+		</taxon>
+		<taxon id="A/Shenzhen/227/1995">
+			<date value="1995" direction="forwards" units="years"/>
+			<attr name="antigenic">1.0 1.0</attr>
+		</taxon>
+		<taxon id="A/Siena/10/1989">
+			<date value="1989" direction="forwards" units="years"/>
+			<attr name="antigenic">1.0 1.0</attr>
+		</taxon>
+		<taxon id="A/Siena/9/1989">
+			<date value="1989" direction="forwards" units="years"/>
+			<attr name="antigenic">1.0 1.0</attr>
+		</taxon>
+		<taxon id="A/Singapore/10/2009">
+			<date value="2009" direction="forwards" units="years"/>
+			<attr name="antigenic">1.0 1.0</attr>
+		</taxon>
+		<taxon id="A/Singapore/6/1986">
+			<date value="1986" direction="forwards" units="years"/>
+			<attr name="antigenic">1.0 1.0</attr>
+		</taxon>
+		<taxon id="A/SolomonIslands/3/2006">
+			<date value="2006" direction="forwards" units="years"/>
+			<attr name="antigenic">1.0 1.0</attr>
+		</taxon>
+		<taxon id="A/SouthDakota/6/2007">
+			<date value="2007" direction="forwards" units="years"/>
+			<attr name="antigenic">1.0 1.0</attr>
+		</taxon>
+		<taxon id="A/Stockholm/13/2002">
+			<date value="2002" direction="forwards" units="years"/>
+			<attr name="antigenic">1.0 1.0</attr>
+		</taxon>
+		<taxon id="A/StPetersburg/10/2007">
+			<date value="2007" direction="forwards" units="years"/>
+			<attr name="antigenic">1.0 1.0</attr>
+		</taxon>
+		<taxon id="A/StPetersburg/12/2008">
+			<date value="2008" direction="forwards" units="years"/>
+			<attr name="antigenic">1.0 1.0</attr>
+		</taxon>
+		<taxon id="A/StPetersburg/49/2003">
+			<date value="2003" direction="forwards" units="years"/>
+			<attr name="antigenic">1.0 1.0</attr>
+		</taxon>
+		<taxon id="A/StPetersburg/5/2008">
+			<date value="2008" direction="forwards" units="years"/>
+			<attr name="antigenic">1.0 1.0</attr>
+		</taxon>
+		<taxon id="A/Switzerland/3100/2002">
+			<date value="2002" direction="forwards" units="years"/>
+			<attr name="antigenic">1.0 1.0</attr>
+		</taxon>
+		<taxon id="A/Taiwan/1/1986">
+			<date value="1986" direction="forwards" units="years"/>
+			<attr name="antigenic">1.0 1.0</attr>
+		</taxon>
+		<taxon id="A/Texas/36/1991">
+			<date value="1991" direction="forwards" units="years"/>
+			<attr name="antigenic">1.0 1.0</attr>
+		</taxon>
+		<taxon id="A/Texas/5/2007">
+			<date value="2007" direction="forwards" units="years"/>
+			<attr name="antigenic">1.0 1.0</attr>
+		</taxon>
+		<taxon id="A/Thessaloniki/24/2005">
+			<date value="2005" direction="forwards" units="years"/>
+			<attr name="antigenic">1.0 1.0</attr>
+		</taxon>
+		<taxon id="A/Tula/5/2007">
+			<date value="2007" direction="forwards" units="years"/>
+			<attr name="antigenic">1.0 1.0</attr>
+		</taxon>
+		<taxon id="A/Ulaanbaatar/116/2007">
+			<date value="2007" direction="forwards" units="years"/>
+			<attr name="antigenic">1.0 1.0</attr>
+		</taxon>
+		<taxon id="A/Ulaanbaatar/2212/2007">
+			<date value="2007" direction="forwards" units="years"/>
+			<attr name="antigenic">1.0 1.0</attr>
+		</taxon>
+		<taxon id="A/USSR/90/1977">
+			<date value="1977" direction="forwards" units="years"/>
+			<attr name="antigenic">1.0 1.0</attr>
+		</taxon>
+		<taxon id="A/USSR/92/1977">
+			<date value="1977" direction="forwards" units="years"/>
+			<attr name="antigenic">1.0 1.0</attr>
+		</taxon>
+		<taxon id="A/Wisconsin/13/2009">
+			<date value="2009" direction="forwards" units="years"/>
+			<attr name="antigenic">1.0 1.0</attr>
+		</taxon>
+		<taxon id="A/Zagreb/1982/2008">
+			<date value="2008" direction="forwards" units="years"/>
+			<attr name="antigenic">1.0 1.0</attr>
+		</taxon>
+	</taxa>
+
+	<empiricalTreeDistributionModel id="treeModel" fileName="/home/ycheung/clustering/data/H1N1_MCC.trees"> 
+		<taxa idref="taxa"/>
+	</empiricalTreeDistributionModel>
+<!--  ==================================================================   -->
+
+	
+<!-- Likelihood -->
+	<AntigenicLikelihood id="aglikelihoodtreecluster" 
+			fileName="/home/ycheung/clustering/data/H1N1_HI_data.tsv" 
+			mdsDimension="2"
+			intervalWidth="1.0"
+			driftTreeClusterVirusLocations = "true">
+		<virusLocations>
+			<matrixParameter id="virusLocations"/>
+		</virusLocations>	
+		<serumLocations>
+			<matrixParameter id="serumLocations"/>
+		</serumLocations>			
+		<mdsPrecision>
+			<parameter id="mds.precision" value="0.8" lower="0.0"/>
+		</mdsPrecision>
+		<serumDrift>
+			<parameter id="serum.drift" value="1" lower="0.0"/> 
+		</serumDrift>
+		<serumOffsets>
+			<parameter id="serumOffsets"/>
+		</serumOffsets>	
+		<mu1Scale>
+			<parameter id="mu1Scale" value="1" lower="0.0"/>
+		</mu1Scale>
+		<mu2Scale>
+			<parameter id="mu2Scale" value="1" lower="0.0"/>
+		</mu2Scale>
+		<muMean>
+			<parameter id="muMean" value="0" lower="0.0"/>
+		</muMean>
+	</AntigenicLikelihood>
+	
+	<TreeClusterViruses id="TreeClusterViruses" initialK="20">
+		<muPrecision>
+			<parameter id="mu.precision" value="0.4" lower="0.0"/>
+		</muPrecision>
+		<probActiveNode>
+			<parameter id="probActiveNode" value="0.05" lower="0.0" upper="1.0"/>
+		</probActiveNode>
+		<treeModel idref="treeModel"/> 
+		<excisionPoints>
+			<parameter id="excisions"/>
+		</excisionPoints>
+		<mu>
+			<matrixParameter id="mu"/>
+		</mu>
+		<virusLocations>
+			<MatrixParameter idref="virusLocations"/>
+		</virusLocations>
+		<indicators>
+			<parameter id="indicators"/>
+		</indicators>
+		<clusterLabels>
+			<parameter id="clusterLabels"/>
+		</clusterLabels>
+		<clusterLabelsTreeNode>
+			<parameter id = "clusterLabelsTreeNodes" />
+		</clusterLabelsTreeNode>		
+		<virusLocationsTreeNodes>
+			<MatrixParameter id="virusLocationsTreeNodes"/>
+		</virusLocationsTreeNodes>
+		<muMean>
+			<Parameter idref="muMean"/>
+		</muMean>
+	</TreeClusterViruses>
+	
+	<distributionLikelihood id="serumLocations.hpm">
+		<data>
+			<parameter idref="serumLocations"/>
+		</data>
+		<distribution>
+			<normalDistributionModel>
+				<mean>
+					<parameter id="serum.mean" value="0.0" lower="-Infinity" upper="Infinity"/>
+				</mean>
+				<precision>
+					<parameter id="serum.precision" value="1" lower="0.0" upper="Infinity"/>
+				</precision>
+			</normalDistributionModel>
+		</distribution>
+	</distributionLikelihood>	
+<!--  ==================================================================   -->
+
+
+<!--  Operators  -->
+	<TreeClusterAlgorithmOperator id="TreeClusterAlgorithmOperator" weight="10000"
+		fileName="/home/ycheung/clustering/filesForTesting/DefaultProposalWeight_v2.txt" >
+		<virusLocations>
+			<MatrixParameter idref="virusLocations"/>
+		</virusLocations>
+		<serumLocations>
+			<MatrixParameter idref="serumLocations"/>
+		</serumLocations>
+		<mu>
+			<MatrixParameter idref="mu"/>
+		</mu>
+		<indicators>
+			<Parameter idref="indicators"/>
+		</indicators>
+		<excisionPoints>
+			<Parameter idref="excisions"/>
+		</excisionPoints>
+		<treeModel idref="treeModel"/> 
+		<muPrecision>
+			<parameter idref="mu.precision"/>
+		</muPrecision>
+		<clusterLabelsTreeNodes>
+			<parameter idref = "clusterLabelsTreeNodes" />
+		</clusterLabelsTreeNodes>
+		<clusterLabels>
+			<Parameter idref="clusterLabels"/>
+		</clusterLabels>
+		<virusLocationsTreeNodes>
+			<MatrixParameter idref="virusLocationsTreeNodes"/>
+		</virusLocationsTreeNodes>
+		<mu1Scale>
+			<Parameter idref="mu1Scale"/>
+		</mu1Scale>
+		<mu2Scale>
+			<Parameter idref="mu2Scale"/>
+		</mu2Scale>
+		<muMean>
+			<Parameter idref="muMean"/>
+		</muMean>
+	</TreeClusterAlgorithmOperator>
+	
+
+	<Mu1ScaleActiveScaledMu1IntactOperator id="Mu1ScaleActiveScaledMu1IntactOperator" weight="500" scaleFactor="0.99">
+		<virusLocations>
+			<MatrixParameter idref="virusLocations"/>
+		</virusLocations>
+		<mu>
+			<MatrixParameter idref="mu"/>
+		</mu>
+		<indicators>
+			<Parameter idref="indicators"/>
+		</indicators>
+		<mu1Scale>
+			<Parameter idref="mu1Scale"/>
+		</mu1Scale>
+		<treeModel idref="treeModel"/> 
+		<virusLocationsTreeNodes>
+			<MatrixParameter idref="virusLocationsTreeNodes"/>
+		</virusLocationsTreeNodes>
+	</Mu1ScaleActiveScaledMu1IntactOperator>
+	
+	
+	<Mu2ScaleActiveScaledMu2IntactOperator id="Mu2ScaleActiveScaledMu2IntactOperator" weight="500" scaleFactor="0.99">
+		<virusLocations>
+			<MatrixParameter idref="virusLocations"/>
+		</virusLocations>
+		<mu>
+			<MatrixParameter idref="mu"/>
+		</mu>
+		<indicators>
+			<Parameter idref="indicators"/>
+		</indicators>
+		<mu2Scale>
+			<Parameter idref="mu2Scale"/>
+		</mu2Scale>
+		<treeModel idref="treeModel"/> 
+		<virusLocationsTreeNodes>
+			<MatrixParameter idref="virusLocationsTreeNodes"/>
+		</virusLocationsTreeNodes>
+	</Mu2ScaleActiveScaledMu2IntactOperator>
+
+
+	<randomWalkOnActiveMu id="randomWalkOnActiveMu" weight="2000" windowSize="0.5">
+		<mu>
+			<MatrixParameter idref="mu"/>
+		</mu>
+		<indicators>
+			<Parameter idref="indicators"/>
+		</indicators>
+
+		<treeModel idref="treeModel"/> 		
+		<virusLocations>
+			<MatrixParameter idref="virusLocations"/>
+		</virusLocations>
+		<virusLocationsTreeNodes>
+			<MatrixParameter idref="virusLocationsTreeNodes"/>
+		</virusLocationsTreeNodes>
+	</randomWalkOnActiveMu>
+	
+
+	<serumDriftActiveScaledMu1Operator id="serumDriftActiveScaledMu1Operator" weight="500" scaleFactor="0.99">
+		<virusLocations>
+			<MatrixParameter idref="virusLocations"/>
+		</virusLocations>
+		<mu>
+			<MatrixParameter idref="mu"/>
+		</mu>
+		<indicators>
+			<Parameter idref="indicators"/>
+		</indicators>
+		<serumDrift>
+			<Parameter idref="serum.drift"/>
+		</serumDrift>
+		<treeModel idref="treeModel"/> 
+		
+		<virusLocationsTreeNodes>
+			<MatrixParameter idref="virusLocationsTreeNodes"/>
+		</virusLocationsTreeNodes>
+	</serumDriftActiveScaledMu1Operator>
+
+
+	<SerumPrecScaleAllSerumLoc id="SerumPrecScaleAllSerumLoc" weight="500" scaleFactor="0.99">
+		<serumLocations>
+			<MatrixParameter idref="serumLocations"/>
+		</serumLocations>
+		<serumPrec>
+			<Parameter idref="serum.precision"/>
+		</serumPrec>
+	</SerumPrecScaleAllSerumLoc>
+
+	<serumDriftScalingMuOperator id="serumDriftScalingMuOperator" weight = "500" scaleFactor="0.99">
+		<serumDrift>
+			<Parameter idref="serum.drift"/>
+		</serumDrift>
+		<mu>
+			<MatrixParameter idref="mu"/>
+		</mu>
+		<muMean>
+			<Parameter idref="muMean"/>
+		</muMean>
+		<muPrec>
+			<Parameter idref="mu.precision"/>
+		</muPrec>
+	</serumDriftScalingMuOperator>
+	
+	<muMeanTranslateInactiveMu1Operator id="muMeanTranslateInactiveMu1Operator" weight="500" windowSize="0.5">
+		<mu>
+			<MatrixParameter idref="mu"/>
+		</mu>
+		<indicators>
+			<Parameter idref="indicators"/>
+		</indicators>
+		<muMean>
+			<Parameter idref="muMean"/>
+		</muMean>
+	</muMeanTranslateInactiveMu1Operator>
+	
+	
+	<muPrecisionInactiveMuOperator id="muPrecisionInactiveMuOperator" weight = "500" scaleFactor="0.99">
+		<mu>
+			<MatrixParameter idref="mu"/>
+		</mu>
+		<indicators>
+			<Parameter idref="indicators"/>
+		</indicators>
+		<muMean>
+			<Parameter idref="muMean"/>
+		</muMean>
+		<muPrec>
+			<Parameter idref = "mu.precision"/>
+		</muPrec>
+	</muPrecisionInactiveMuOperator>
+<!--  ==================================================================   -->
+
+
+
+<!--  Statistics to print as outputs-->	
+	<ActiveIndicatorsStatistic id = "ActiveIndicatorsStatistic" maxDim="75">
+		<indicators>
+			<parameter idref="indicators"/>
+		</indicators>
+	</ActiveIndicatorsStatistic>
+	
+	<PathStatistic id = "PathStatistic" maxDim="70">
+		<treeModel idref="treeModel"/> 
+		<indicators>
+			<parameter idref="indicators"/>
+		</indicators>
+	</PathStatistic>
+	
+	<KStatistic id = "K">
+		<indicators>
+			<parameter idref="indicators"/>
+		</indicators>
+	</KStatistic>
+		
+	<muStatistic id="muStatistic">
+		<mu>
+			<MatrixParameter idref="mu"/>
+		</mu>
+		<indicators>
+			<Parameter idref="indicators"/>
+		</indicators>
+		<treeModel idref="treeModel"/> 
+	</muStatistic>
+
+	<DriftedMuStatistic id="DriftedMuStatistic">
+		<mu>
+			<MatrixParameter idref="mu"/>
+		</mu>
+		<indicators>
+			<Parameter idref="indicators"/>
+		</indicators>
+	
+		<mu1Scale>
+			<parameter idref="mu1Scale"/>
+		</mu1Scale>
+		
+		<mu2Scale>
+			<parameter idref="mu2Scale"/>
+		</mu2Scale>		
+		
+		<muMean>
+			<parameter idref="muMean"/>
+		</muMean>
+		<treeModel idref="treeModel"/> 
+	</DriftedMuStatistic>
+		
+	<indicatorsStatistic id="indicatorsStatistic">
+		<indicators>
+			<Parameter idref="indicators"/>
+		</indicators>
+	</indicatorsStatistic>
+		
+	<driftedLocationsStatistic id="driftedSerumLocations">
+		<locations>
+			<matrixParameter idref="serumLocations"/>
+		</locations>	
+		<offsets>
+			<parameter idref="serumOffsets"/>
+		</offsets>			
+		<locationDrift>
+			<parameter idref="serum.drift"/>
+		</locationDrift>
+	</driftedLocationsStatistic>
+	
+	<driftedTreeClusterLocationsStatistic id="driftedVirusLocations">
+		<locations>
+			<matrixParameter idref="virusLocations"/>
+		</locations>		
+		<mu1Scale>
+			<parameter idref="mu1Scale"/>
+		</mu1Scale>	
+		<mu2Scale>
+			<parameter idref="mu2Scale"/>
+		</mu2Scale>
+		
+	</driftedTreeClusterLocationsStatistic>
+	
+	<ClusterLabelsVirusesStatistic id="clusterLabelsStatistic">
+		<treeModel idref="treeModel"/> 
+		<indicators>
+			<parameter idref="indicators"/>
+		</indicators>
+		<virusLocations>
+			<MatrixParameter idref="virusLocations"/>
+		</virusLocations>		
+	</ClusterLabelsVirusesStatistic>	
+<!--                -->
+	
+	
+<!--  Annotating the tree -->		
+	<ClusterLabelsVirusesTreeTrait id="ClusterLabelsVirusesTreeTrait">
+		<treeModel idref="treeModel"/>
+		<clusterLabelsTreeNodes>
+			<parameter idref = "clusterLabelsTreeNodes" />
+		</clusterLabelsTreeNodes>
+	</ClusterLabelsVirusesTreeTrait>
+	
+	<NodeNumberTreeTrait id="NodeNumberTreeTrait">
+		<treeModel idref="treeModel"/>
+	</NodeNumberTreeTrait>
+	
+	<AnnotateMuTreeTrait id="annotateMuOnTree" hasDrift="true">
+		<treeModel idref="treeModel"/>
+		<mu>
+			<matrixParameter idref="mu"/>
+		</mu>
+		<indicators>
+			<Parameter idref="indicators"/>
+		</indicators>
+	   <mu1Scale>
+			<parameter idref="mu1Scale"/>
+		</mu1Scale>
+		<mu2Scale>
+			<parameter idref="mu2Scale"/>
+		</mu2Scale>
+		
+		<muMean>
+			<parameter idref="muMean"/>
+		</muMean>
+	</AnnotateMuTreeTrait>
+
+	<AnnotateLocationParameterTreeTrait id="annotateVirusLocationsOnTree" hasDrift="true">
+		<treeModel idref="treeModel"/>
+		<virusLocationsTreeNodes>
+			<matrixParameter idref="virusLocationsTreeNodes"/>
+		</virusLocationsTreeNodes>
+		<indicators>
+			<Parameter idref="indicators"/>
+		</indicators>
+
+	   <mu1Scale>
+			<parameter idref="mu1Scale"/>
+		</mu1Scale>
+		
+		<mu2Scale>
+			<parameter idref="mu2Scale"/>
+		</mu2Scale>
+		
+		<muMean>
+			<parameter idref="muMean"/>
+		</muMean>
+	</AnnotateLocationParameterTreeTrait>
+
+<!--  ==================================================================   -->
+		
+<!-- Operators specification-->	
+	<operators id="operators" optimizationSchedule="log">
+	
+     <!--  *********************   mds precision   ************************************************    -->	
+	     <!--	
+		<scaleOperator scaleFactor="0.99" weight="1000">
+			<parameter idref="mds.precision"/>
+		</scaleOperator>	
+		-->
+     <!--  ***********************  serum drift   **********************************************    -->
+		<scaleOperator scaleFactor="0.98" weight="1000">
+			<parameter idref="serum.drift"/>
+		</scaleOperator>
+		
+		<serumDriftActiveScaledMu1Operator idref="serumDriftActiveScaledMu1Operator"/>
+		
+	 <!--  ************************ serum precision  *********************************************    -->	
+	<!--	<scaleOperator scaleFactor="0.99" weight="1000">
+			<parameter idref="serum.precision"/>
+		</scaleOperator>	
+
+		<SerumPrecScaleAllSerumLoc idref="SerumPrecScaleAllSerumLoc"/>
+	-->
+     <!--  *************************   mu mean   ********************************************    -->
+	<!--	 <randomWalkOperator windowSize="0.5" weight="1000"> 
+			<parameter idref="muMean"/> 
+		 </randomWalkOperator>	
+		 
+		<muMeanTranslateInactiveMu1Operator idref="muMeanTranslateInactiveMu1Operator"/> 
+	-->
+     <!--  ************************   mu precision   *********************************************    -->
+	<!--	<scaleOperator scaleFactor="0.99" weight="3000">
+			<parameter idref="mu.precision"/>
+		</scaleOperator>
+		
+		<muPrecisionInactiveMuOperator idref="muPrecisionInactiveMuOperator"/>  
+	-->
+	 <!--  ***************************  probActiveNode  ******************************************    -->		
+		<randomWalkOperator windowSize="0.02" weight="3000"> 
+			<parameter idref="probActiveNode"/> 
+		 </randomWalkOperator>		
+
+     <!--  ****************************  mu  *****************************************    -->
+		<randomWalkOnActiveMu idref="randomWalkOnActiveMu"/>
+
+     <!--  ****************************  serum location  *****************************************    -->
+		 <randomWalkOperator windowSize="5.0" weight="100000"> 
+			<parameter idref="serumLocations"/> 
+		 </randomWalkOperator>	
+
+     <!--  ****************************  tree clusters  *****************************************    -->
+		<TreeClusterAlgorithmOperator idref="TreeClusterAlgorithmOperator"/>  
+
+	
+	
+	
+     <!--  ****************************  obsolete *****************************************    -->
+
+	<!--	<serumDriftScalingMuOperator idref="serumDriftScalingMuOperator"/>  NOT SURE WHAT'S THE USE.. This is if I have muMean multiplied by serum drift?.-->
+
+	
+	<!--
+		<Mu1ScaleActiveScaledMu1IntactOperator idref="Mu1ScaleActiveScaledMu1IntactOperator"/>	
+		<Mu2ScaleActiveScaledMu2IntactOperator idref="Mu2ScaleActiveScaledMu2IntactOperator"/>
+		<scaleOperator scaleFactor="0.95" weight="1000">
+			<parameter idref="mu1Scale"/>
+		</scaleOperator>
+		<scaleOperator scaleFactor="0.95" weight="1000">
+			<parameter idref="mu2Scale"/>
+		</scaleOperator>
+
+		<upDownOperator scaleFactor="0.99" weight="1000">
+			<up>
+				<parameter idref="serum.drift"/>
+				<parameter idref="mu1Scale"/>
+			</up>
+			<down>
+			</down>
+		</upDownOperator>	
+	-->
+	
+	
+		<!-- OBSOLETE. muMeanTranslateInactiveMu1Operator is better
+		<randomWalkOperator windowSize="0.3" weight = "2000">
+			<parameter idref="muMean"/>
+		</randomWalkOperator>
+		-->
+		
+	</operators>
+<!--  ==================================================================   -->
+
+<!-- MCMC -->	
+<!--	<mcmc id="mcmc" chainLength="200000" autoOptimize="true" fullEvaluation="1000">  -->
+	<mcmc id="mcmc" chainLength="500000000" autoOptimize="true" fullEvaluation="1000">  
+		<posterior id="posterior">
+			<prior id="prior">
+
+				<!--
+				<gammaPrior shape="1" scale="1" offset="0.0">
+					<parameter idref="mds.precision"/>
+				</gammaPrior>		
+				-->
+				
+				<inverseGammaPrior shape="0.0001" scale="0.0001" offset="0"> 
+					<parameter idref="serum.drift"/>  
+				</inverseGammaPrior> 
+				<!--
+				<gammaPrior shape="0.01" scale="0.01" offset="0.0">
+					<parameter idref="serum.precision"/>
+				</gammaPrior>		
+				-->
+				<!--
+				<normalPrior mean="0" stdev="100">
+					<parameter idref="muMean"/>
+				</normalPrior>
+				-->
+				<!--
+				<gammaPrior shape="0.01" scale="0.01" offset="0">
+					<parameter idref="mu.precision"/> 
+						</gammaPrior>			 
+				-->
+
+				<uniformPrior lower="0" upper="1">
+					<parameter idref = "probActiveNode" />
+				</uniformPrior>
+
+
+				<distributionLikelihood idref="serumLocations.hpm"/>
+
+				<TreeClusterViruses idref="TreeClusterViruses"/> 
+
+		
+
+				
+				<!--
+				<gammaPrior shape="1.6" scale="1" offset="0.0">
+					<parameter idref="mu1Scale"/>
+				</gammaPrior>
+
+				<gammaPrior shape="1.6" scale="1" offset="0.0">
+					<parameter idref="mu2Scale"/>
+				</gammaPrior>
+	-->	
+
+
+			</prior>
+			
+			<likelihood id="likelihood">	            	
+	            <AntigenicLikelihood idref="aglikelihoodtreecluster"/>
+			</likelihood>
+		</posterior>
+		
+		<operators idref="operators"/>
+		
+		<log id="screenLog" logEvery="200000">
+			<column label="Posterior" dp="4" width="12">
+				<posterior idref="posterior"/>
+			</column>
+			<column label="Prior" dp="4" width="12">
+				<prior idref="prior"/>
+			</column>
+			<column label="Likelihood" dp="4" width="12">
+				<likelihood idref="likelihood"/>
+			</column>
+			<column label = "K" width="12">
+				<statistic idref="K"/>
+			</column>
+			<column label="MDSPrecision" sf="6" width="12">
+				<parameter idref="mds.precision"/>
+			</column> 
+			<column label="SerumDrift" sf="6" width="12">
+				<parameter idref="serum.drift"/>
+			</column> 
+
+			<column label="muMean" sf="6" width="12">
+				<parameter idref="muMean"/>
+			</column> 
+			<column label="muPrecision" sf="6" width = "12">
+				<parameter idref="mu.precision"/>
+			</column>
+			<column label="SerumPrecision" sf="6" width="12">
+				<parameter idref="serum.precision"/>
+			</column> 			
+			<column label="Mu1Scale" sf="6" width="12">
+				<parameter idref="mu1Scale"/>
+			</column> 
+			<column label="Mu2Scale" sf="6" width="12">
+				<parameter idref="mu2Scale"/>
+			</column> 
+			<column label="probActiveNode" sf="6" width="12">
+				<parameter idref="probActiveNode"/>
+			</column>			
+		</log>
+		
+		<log id="mainLog" logEvery="200000" fileName="H1N1_mds.log">
+			<posterior idref="posterior"/>
+			<prior idref="prior"/>
+			<AntigenicLikelihood idref="aglikelihoodtreecluster"/>
+			<statistic idref="K"/>
+			<parameter idref="mds.precision"/>		
+			<parameter idref="serum.drift"/>
+			<parameter idref="mu1Scale"/>
+			<parameter idref="mu2Scale"/>
+			<parameter idref="muMean"/>
+			<parameter idref="serum.precision"/>
+			<parameter idref="mu.precision"/>
+			<parameter idref="probActiveNode"/>
+		</log>
+		
+		
+		<log id="muLog" logEvery="200000" fileName="H1N1_mds.muStat.log">
+			<statistic idref="muStatistic"/>
+		</log>
+		<log id="DriftedMuLog" logEvery="200000" fileName="H1N1_mds.drifted.Mu.log">
+			<statistic idref="DriftedMuStatistic"/>
+		</log>
+		
+		<log id="fileLog9" logEvery="200000" fileName="H1N1_mds.undriftVirus.log">		
+			<MatrixParameter idref="virusLocations"/>
+		</log> 
+		<log id="fileDriftedVirusLocations" logEvery="200000" fileName="H1N1_mds.drifted.VirusLocs.log">		
+			<statistic idref="driftedVirusLocations"/>
+		</log>
+
+		<log id="fileLog3" logEvery="200000" fileName="H1N1_mds.drifted.SerumLocs.log">
+			<statistic idref="driftedSerumLocations"/>
+		</log>
+		
+		<logTree id="treeFileLog" logEvery="200000" nexusFormat="true" fileName="H1N1_mds.trees" sortTranslationTable="true">
+			<treeModel idref="treeModel"/>
+			<posterior idref="posterior"/>
+			<ClusterLabelsVirusesTreeTrait idref="ClusterLabelsVirusesTreeTrait"/>
+			<AnnotateMuTreeTrait idref="annotateMuOnTree"/>
+			<AnnotateLocationParameterTreeTrait idref="annotateVirusLocationsOnTree"/>
+			<NodeNumberTreeTrait idref="NodeNumberTreeTrait"/>
+		</logTree>			
+	
+		<log id="clusterLog" logEvery="200000" fileName="H1N1_mds.clusterLabels.log">
+			<posterior idref="posterior"/>
+			<statistic idref="clusterLabelsStatistic"/>
+		</log>
+		
+		<log id="pathLog" logEvery="200000" fileName="H1N1_mds.path.log">
+			<statistic idref="PathStatistic"/>
+		</log>
+
+		<log id="activeIndicatorsLog" logEvery="200000" fileName="H1N1_mds.activeIndicators.log">
+			<statistic idref="ActiveIndicatorsStatistic"/>
+		</log>	
+		<log id="indicatorsLog" logEvery="200000" fileName="H1N1_mds.indicatorsStat.log">
+			<statistic idref="indicatorsStatistic"/>
+		</log>
+
+	</mcmc>
+<!--  ==================================================================   -->
+	
+	<report>
+		<property name="timer">
+			<object idref="mcmc"/>
+		</property>
+	</report>
+	
+</beast>	
+
+
