@@ -457,15 +457,15 @@ Fourth, similar to A/H3N2, the A/H1N1 clusters with high confidence to be antige
 \subsubsection*{Sensitivity Analyses}
 
 Diagnostics for MCMC convergence suggest that the MCMC mixing is adequate in both A/H1N1 and A/H3N2 analyses. 
-First, when comparing among MCMC replicates, the estimates of $p_i$ are almost identical (supplemental Table SX-Y). 
-The scatterplot of the distribution of these estimates in each pair of replicates shows very high concordance, with $R^2 > 0.9x$  for A/H1N1 (Figure SX-Y) for each level of $\kappa$ considered. 
+First, the Gelman-Rubin statistics on the $p_i$ for each node suggest adequate mixing.
+In the A/H1N1 analysis, the Gelman-Rubin statistics for all $p_i$ are all well below 1.2 (Figure S7) under all $\kappa$ considered, which suggests convergence \cite{Yang_evolutionbook}. 
 We expected that the A/H3N2 analysis would be harder to mix than the A/H1N1 analysis because the complexity of the MCMC inference is higher due to substantially more observations and more antigenic clusters. 
-Nevertheless, MCMC mixing still appears to be adequate ($R^2 > 0.9x$ among each pair of replicate) (Figure SX-Y). 
-Second, the Gelman-Rubin statistic further suggests adequate mixing in each $p_i$, with values below 1.2  suggesting convergence \cite{Yang_evolutionbook}. 
-Third, the Effective Sample Size in each replicate ($>1000$[edit]) and diagnostics from Tracer collectively suggest that other parameters also mixed adequately.
+In the A/H3N2 analysis, the Gelman-Rubin statistics for all $p_i$ are also well below 1.2 (Figure S8) in the primary analysis ($\kappa = 0.1$).
+Under each of $\kappa = 0.05 and 0.15$, all except 2 nodes have Gelman-Rubin statistics well below 1.2 (Gelman-Rubin statistics slightly higher than 1.2 (1.2 - 1.28)).
+Second, the Effective Sample Size of the posterior probability statistic reported in Tracer in all 10 replicates ($>700$) also suggest that the chain mixed adequately in our primary A/H3N2 and A/H1N1 analyses.
 
 The use of different trees sampled from the original MCMC phylogenetic inference yields consistent clustering results. 
-In each comparison, the heatmap comparing probabilistic clustering from the MCC tree and each sampled tree (Figure S X-Y  for A/H1N1 and X- Y for A/H3N2) shows that the clustering patterns are highly similar. 
+In each comparison, the heatmap comparing probabilistic clustering from the MCC tree and each sampled tree (Figure S9  for A/H1N1 and Figure S10 for A/H3N2) shows that the clustering patterns are highly similar. 
 For instance, viruses that are inferred to have a high probability of co-clustering in one tree also has a high probability of co-clustering in other trees, indicating that the distinct block structures are preserved. 
 Variation from results among tree samples does exist but are minor. 
 Hence, this sensitivity analysis further verifies that the use of a single MCC tree is fair.

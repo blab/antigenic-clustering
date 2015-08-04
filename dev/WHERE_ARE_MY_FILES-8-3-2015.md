@@ -133,7 +133,10 @@ Main analysis:
 		- Trevor uses these data and his script to draw better looking heatmaps
 
  Statistic and Figures for MCMC Diagnostics:
- 	 - /Users/charles/Documents/research/antigenic/GenoPheno/driver/clustering/scripts/GelmanRubinStatistics-July29-2015.R
+ 	 - /Users/charles/Documents/research/antigenic/GenoPheno/antigenic-clustering/dev/code/analysisScripts/GelmanRubinStatistics-8-3-2015.R
+ 	 - Figures and Statistics: 
+ 	 	-H1N1: /Users/charles/Documents/research/antigenic/GenoPheno/driver/clustering/analysisManuscript7-31-2015/H1N1/MCMC-diagnostics
+ 	 	-H3N2: /Users/charles/Documents/research/antigenic/GenoPheno/driver/clustering/analysisManuscript7-31-2015/H3N2/MCMC-diagnostics
 		
  Figure MCMC sensitivity analyses:
  	MCMC replicates (#1-10)
