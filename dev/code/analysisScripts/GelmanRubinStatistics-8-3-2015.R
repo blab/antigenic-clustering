@@ -24,7 +24,7 @@ outGelmanRubinPlot = "/Users/charles/Documents/research/antigenic/GenoPheno/driv
 indicators = read.table("/Users/charles/Documents/researchData/clustering/forManuscript/H3N2/C3b-mds0_1/H3N2_mds.indicatorsStat.log", header = T)
 indicators2 = read.table("/Users/charles/Documents/researchData/clustering/forManuscript/H3N2/C3b-mds0_1-rep2/H3N2_mds.indicatorsStat.log", header = T)
 indicators3 = read.table("/Users/charles/Documents/researchData/clustering/forManuscript/H3N2/C3b-mds0_1-rep3/H3N2_mds.indicatorsStat.log", header = T)
-indicators4 = read.table("/Users/charles/Documents/researchData/clustering/forManuscript/H3N2/C3b-mds0_1-rep5/H3N2_mds.indicatorsStat.log", header = T)
+indicators4 = read.table("/Users/charles/Documents/researchData/clustering/forManuscript/H3N2/C3b-mds0_1-rep5/H3N2_mds.indicatorsStat.log", header = T) #note. this replaces the rep 4 that I deleted by accident
 indicators5 = read.table("/Users/charles/Documents/researchData/clustering/forManuscripts-moreReplicates/H3N2/C3b-mds0_1-rep5/H3N2_mds.indicatorsStat.log", header = T)
 indicators6 = read.table("/Users/charles/Documents/researchData/clustering/forManuscripts-moreReplicates/H3N2/C3b-mds0_1-rep6/H3N2_mds.indicatorsStat.log", header = T)
 indicators7 = read.table("/Users/charles/Documents/researchData/clustering/forManuscripts-moreReplicates/H3N2/C3b-mds0_1-rep7/H3N2_mds.indicatorsStat.log", header = T)

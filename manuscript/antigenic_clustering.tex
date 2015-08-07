@@ -456,20 +456,33 @@ Fourth, similar to A/H3N2, the A/H1N1 clusters with high confidence to be antige
 
 \subsubsection*{Sensitivity Analyses}
 
-Diagnostics for MCMC convergence suggest that the MCMC mixing is adequate in both A/H1N1 and A/H3N2 analyses. 
-First, the Gelman-Rubin statistics on the $p_i$ for each node suggest adequate mixing.
-In the A/H1N1 analysis, the Gelman-Rubin statistics for all $p_i$ are all well below 1.2 (Figure S7) under all $\kappa$ considered, which suggests convergence \cite{Yang_evolutionbook}. 
-We expected that the A/H3N2 analysis would be harder to mix than the A/H1N1 analysis because the complexity of the MCMC inference is higher due to substantially more observations and more antigenic clusters. 
-In the A/H3N2 analysis, the Gelman-Rubin statistics for all $p_i$ are also well below 1.2 (Figure S8) in the primary analysis ($\kappa = 0.1$).
-Under each of $\kappa = 0.05 and 0.15$, all except 2 nodes have Gelman-Rubin statistics well below 1.2 (Gelman-Rubin statistics slightly higher than 1.2 (1.2 - 1.28)).
-Second, the Effective Sample Size of the posterior probability statistic reported in Tracer in all 10 replicates ($>700$) also suggest that the chain mixed adequately in our primary A/H3N2 and A/H1N1 analyses.
+Several lines of evidence suggest that the MCMC mixing for the collection of $I_i$, our main parameters of interest, are adequate in both our A/H1N1 and A/H3N2 analyses. 
+The collection of $\hat{p_i}$, the estimated probability that node $i$ forms new antigenic cluster, as estimated by averaging $I_i$ over MCMC samples, are  similar across the 10 replicates (summary available at https://github.com/blab/antigenic-clustering).
+Ultimately, the high concordance across replicates is the most important measure of convergence among replicates, but we also used the Gelman-Rubin statistics and the Effective Sample Size (ESS) to further evaluate MCMC mixing.
+In the A/H1N1 analysis, for all $\kappa$ considered, the Gelman-Rubin statistics for all $I_i$ (Figure S7) are well below 1.2, a threshold commonly used to  evaluate convergence \cite{Yang_evolutionbook}. 
+In the A/H3N2 analysis, which we expect to be harder to mix than the A/H1N1 analysis because the A/H3N2 analysis contains substantially more observations and more antigenic clusters, all the Gelman-Rubin statistics for all $I_i$ (Figure S8) are still well below 1.2 in the primary analysis ($\kappa = 0.1$).
+For each of $\kappa = 0.05$ and 0.15, 801 nodes have Gelman-Rubin statistics well below 1.2 and the remaining 2 nodes have Gelman-Rubin statistics in the range of 1.2 - 1.28.
+Last, the ESS reported in Tracer \cite{beast04} also suggests that the chain mixed adequately.
+For instance, in the main replicate 1 of the A/H3N2 $\kappa=0.1$ analysis that we used to report our main findings, the ESS for 787 out of 802 nodes are $> 200$, with the majority of them $>1000$.
+The remaining 17 out of 802 nodes have lower ESS but are still between 56 and 166.3.
+
+
+Other parameters in the inference also mix well.
+The posterior probability is used as a summary statistic to evaluate the overall MCMC mixing.
+The Effective Sample Size of the posterior probability statistic in the 10 replicates are all $>700$.
+Similarly, the collection of $\mu_i = (\mu_{i1}, \mu_{i2}))$ also mix well.
+For instance, in the main replicate 1 of the A/H3N2 analysis, the majority of the 803 x 2 = 1606 parameters have ESS $> 1000$.
+Only 6 of the 1606 nodes have ESS $<200$ but still fall between 94.8 and 189.9. 
+%<Include or not include>
+%Among the worst performing $\mu_{i2}$, we observe that their distribution are bimodal about 0, and they have lower ESS because it is relatively much more difficult to cross from 1 hill to another hill across 0.
+%This situation arises when there is not much data to constrain the inference of $\mu_{i2}$ to either go up or down by the same distance about 0.
+%In general, we do not believe that this is a problem for our analysis because the likelihood is only affected by the relative distance between viruses and sera but not the absolute sign of $\mu_{i2}$, and we only concern with the Euclidean distance between viruses and sera.
 
 The use of different trees sampled from the original MCMC phylogenetic inference yields consistent clustering results. 
 In each comparison, the heatmap comparing probabilistic clustering from the MCC tree and each sampled tree (Figure S9  for A/H1N1 and Figure S10 for A/H3N2) shows that the clustering patterns are highly similar. 
 For instance, viruses that are inferred to have a high probability of co-clustering in one tree also has a high probability of co-clustering in other trees, indicating that the distinct block structures are preserved. 
 Variation from results among tree samples does exist but are minor. 
 Hence, this sensitivity analysis further verifies that the use of a single MCC tree is fair.
-
 
 
 
