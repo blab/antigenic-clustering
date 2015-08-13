@@ -1,4 +1,4 @@
-# Quantifying antigenic evolution in influenza using a clustered cartographic model
+# Detailed antigenic dynamics of influenza virus revealed by Bayesian phylogenetic clustering
 
 ![](manuscript/figures/lineart/schematicDiagram.png)
 

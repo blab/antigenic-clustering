@@ -134,6 +134,11 @@ Main analysis:
 
  Statistic and Figures for MCMC Diagnostics:
  	 - /Users/charles/Documents/research/antigenic/GenoPheno/antigenic-clustering/dev/code/analysisScripts/GelmanRubinStatistics-8-3-2015.R
+ 	 - /Users/charles/Documents/research/antigenic/GenoPheno/antigenic-clustering/dev/code/analysisScripts/euclideanStatMuToSeeInTracer.R
+ 	 	- on just replicate #1 of kappa 0.1 h3n2
+ 	 		-/Users/charles/Documents/researchData/clustering/forManuscript-organized/h3n2/kappa0_1/C3b-mds0_1/EuclideanStat.log
+ 	 - Tracer
+	 	 - Some manual summary /Users/charles/Documents/research/antigenic/GenoPheno/antigenic-clustering/manuscript/tracer-inspection-MCMC-diagnostic-summary.docx
  	 - Figures and Statistics: 
  	 	-H1N1: /Users/charles/Documents/research/antigenic/GenoPheno/driver/clustering/analysisManuscript7-31-2015/H1N1/MCMC-diagnostics
  	 	-H3N2: /Users/charles/Documents/research/antigenic/GenoPheno/driver/clustering/analysisManuscript7-31-2015/H3N2/MCMC-diagnostics
