@@ -142,13 +142,16 @@ Main analysis:
  	 - Figures and Statistics: 
  	 	-H1N1: /Users/charles/Documents/research/antigenic/GenoPheno/driver/clustering/analysisManuscript7-31-2015/H1N1/MCMC-diagnostics
  	 	-H3N2: /Users/charles/Documents/research/antigenic/GenoPheno/driver/clustering/analysisManuscript7-31-2015/H3N2/MCMC-diagnostics
-		
+			concordance: /Users/charles/Documents/research/antigenic/GenoPheno/driver/clustering/analysisManuscript7-31-2015/H3N2/MCMC-diagnostics/H3N2-0.1-outConcordancePlot.pdf	
+
  Figure MCMC sensitivity analyses:
  	MCMC replicates (#1-10)
  		- scripts: 
- 			- Gelman Rubin graph: /Users/charles/Documents/research/antigenic/GenoPheno/antigenic-clustering/code/analysisScripts/GelmanRubinStatistics-July29-2015.R
+ 			- Gelman Rubin graph: 
+	 			/Users/charles/Documents/research/antigenic/GenoPheno/antigenic-clustering/dev/code/analysisScripts/GelmanRubinStatistics-8-3-2015.R
+ 			  I think this is obsolete: /Users/charles/Documents/research/antigenic/GenoPheno/antigenic-clustering/code/analysisScripts/GelmanRubinStatistics-July29-2015.R
  			- concordance plot between a pair of replicates: /Users/charles/Documents/research/antigenic/GenoPheno/antigenic-clustering/code/analysisScripts/get_p_on_and_evaluateMCMCConvergence-forManuscript-2-12-2015.R
-! 		- figures:
+ 		- figures: /Users/charles/Documents/research/antigenic/GenoPheno/driver/clustering/analysisManuscript7-31-2015/H3N2/MCMC-diagnostics
  	
  	MCMC different sampled trees (#1-6)
  		- pre-script:  	To get the heatmap, you have to first get the adjacency matrix by using a java program from the beast code:  mergeAdjacencyMatrixPlots.java

@@ -18,6 +18,7 @@ indicators10 = read.table("/Users/charles/Documents/researchData/clustering/forM
 outProportionOn = "/Users/charles/Documents/research/antigenic/GenoPheno/driver/clustering/analysisManuscript7-31-2015/H3N2/MCMC-diagnostics/H3N2-0.05-outProportionOn.txt"
 outGelmanRubinStats = "/Users/charles/Documents/research/antigenic/GenoPheno/driver/clustering/analysisManuscript7-31-2015/H3N2/MCMC-diagnostics/H3N2-0.05-rankedGelmanRubinStats.txt"
 outGelmanRubinPlot = "/Users/charles/Documents/research/antigenic/GenoPheno/driver/clustering/analysisManuscript7-31-2015/H3N2/MCMC-diagnostics/H3N2-0.05-outGelmanRubinPlot.pdf"
+outConcordancePlot = "/Users/charles/Documents/research/antigenic/GenoPheno/driver/clustering/analysisManuscript7-31-2015/H3N2/MCMC-diagnostics/H3N2-0.05-outConcordancePlot"
 
 
 #mds precision  = 0.1
@@ -34,7 +35,7 @@ indicators10 = read.table("/Users/charles/Documents/researchData/clustering/forM
 outProportionOn = "/Users/charles/Documents/research/antigenic/GenoPheno/driver/clustering/analysisManuscript7-31-2015/H3N2/MCMC-diagnostics/H3N2-0.1-outProportionOn.txt"
 outGelmanRubinStats = "/Users/charles/Documents/research/antigenic/GenoPheno/driver/clustering/analysisManuscript7-31-2015/H3N2/MCMC-diagnostics/H3N2-0.1-rankedGelmanRubinStats.txt"
 outGelmanRubinPlot = "/Users/charles/Documents/research/antigenic/GenoPheno/driver/clustering/analysisManuscript7-31-2015/H3N2/MCMC-diagnostics/H3N2-0.1-outGelmanRubinPlot.pdf"
-
+outConcordancePlot = "/Users/charles/Documents/research/antigenic/GenoPheno/driver/clustering/analysisManuscript7-31-2015/H3N2/MCMC-diagnostics/H3N2-0.1-outConcordancePlot"
 
 #mds precision  = 0.15
 indicators = read.table("/Users/charles/Documents/researchData/clustering/forManuscript/H3N2/C3b-mds0_15/H3N2_mds.indicatorsStat.log", header = T)
@@ -194,5 +195,32 @@ write.table(pOn[order(pOn[,2], decreasing=T),], file =outProportionOn , sep="\t"
 
 
 
+myColors = c("seagreen","orangered","steelblue1" , "mediumpurple3", "royalblue4",  "snow3" )
+pdf(paste(outConcordancePlot, "1-2.pdf", sep=""), width=4, height = 4)
+ plot(proportionOn, proportionOn2, xlab="replicate 1", ylab="replicate 2", cex=1, pch=16, col=myColors[3])
+ abline(0,1, col=myColors[5],  lty=2)
+dev.off()
 
+pdf(paste(outConcordancePlot, "1-3.pdf", sep=""), width=4, height = 4)
+ plot(proportionOn, proportionOn3, xlab="replicate 1", ylab="replicate 3", cex=1, pch=16, col=myColors[3])
+ abline(0,1, col=myColors[5],  lty=2)
+dev.off()
+
+
+pdf(paste(outConcordancePlot, "1-4.pdf", sep=""), width=4, height = 4)
+ plot(proportionOn, proportionOn3, xlab="replicate 1", ylab="replicate 4", cex=1, pch=16, col=myColors[3])
+ abline(0,1, col=myColors[5],  lty=2)
+dev.off()
+
+
+plot(proportionOn, proportionOn3)
+plot(proportionOn, proportionOn4)
+plot(proportionOn, proportionOn5)
+
+plot(proportionOn, proportionOn6)
+
+plot(proportionOn, proportionOn7)
+plot(proportionOn, proportionOn8)
+plot(proportionOn, proportionOn9)
+plot(proportionOn, proportionOn10)
 

@@ -1,0 +1,10 @@
+x = seq(-20,20,by=.01)
+y = dnorm(x, mean=10)
+myColors = c("royalblue4", "orangered", "seagreen","mediumpurple3",   "steelblue1" ,"snow3" )
+
+pdf("/Users/charles/Documents/research/antigenic/GenoPheno/antigenic-clustering/manuscript/figures/custom/simulationNoiseLog2Titer.pdf", height=3, width=5)
+plot(x,y, xlim=c(0,14), type='n', xlab="log2 titer", ylab="density", cex.lab=1.2)
+lines(x,y, col=myColors[2], lwd=2)
+lines(x-2, (y), col=myColors[5], lwd=2)
+lines(x-4, (y), col=myColors[6], lwd=2)
+dev.off()
