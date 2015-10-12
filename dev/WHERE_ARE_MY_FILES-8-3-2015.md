@@ -173,16 +173,33 @@ Main analysis:
  
 Simulations:
 
+ new! 
+ Simulate data  (now use R to take samples instead of python script)
+	script1: /Users/charles/Documents/research/antigenic/GenoPheno/antigenic-clustering/dev/code/analysisScripts/realisticThinning-8-24-2015.R
+	script2: /Users/charles/Documents/research/antigenic/GenoPheno/antigenic-clustering/dev/code/analysisScripts/realisticThinning-8-24-2015-Part2neighborhood.R
+	xml:	/Users/charles/Documents/research/antigenic/GenoPheno/antigenic-clustering/dev/code/analysisScripts/pythonScripts_2_7/H3N2_makeXMLforGizmo_analyzeSimData-newThinning.py
+ 	 	modified the template xml: /Users/charles/Documents/research/antigenic/GenoPheno/driver/clustering/simulationsAnalysis/xml/analysisGizmo/H3N2-v0_46-analyzeSimData-template-gizmo-100M.xml
+		files are created in : /Users/charles/Documents/research/antigenic/GenoPheno/driver/clustering/simulationsAnalysis/xml/analysisGizmo	
+
+
+	
+Explore Data characteristic so I can simulate realistically
+/Users/charles/Documents/research/antigenic/GenoPheno/driver/clustering/scripts/ExploreH3N2andH1N1-data-characteristics-2-16-2015.R
+
+
  Code to run MCMC: [NEED TO RECONSTRUCT]: See Tracing code changes over time from Onenote Clustering notebook
 ! 	Script to simulate: 	
  Jar file (v46): /Users/charles/Documents/research/antigenic/GenoPheno/driver/clustering/software/beast_v0_46-simulateViruses.jar
 
  XML: 
  	To make the XML for simulating data:
- 		/Users/charles/Documents/research/antigenic/GenoPheno/antigenic-clustering/code/analysisScripts/pythonScripts_2_7/H3N2_makeXMLforGizmo_analyzeSimData.py
- 		/Users/charles/Documents/research/antigenic/GenoPheno/antigenic-clustering/code/analysisScripts/pythonScripts_2_7/H3N2_createXMLforSimulation-2-18-2015.py
+ 		/Users/charles/Documents/research/antigenic/GenoPheno/antigenic-clustering/dev/code/analysisScripts/pythonScripts_2_7/H3N2_createXMLforSimulation-2-18-2015.py
+ 	To make the XML to run on Gizmo:
+ 	 		/Users/charles/Documents/research/antigenic/GenoPheno/antigenic-clustering/dev/code/analysisScripts/pythonScripts_2_7/H3N2_makeXMLforGizmo_analyzeSimData.py
+ 	 			the template xml: /Users/charles/Documents/research/antigenic/GenoPheno/driver/clustering/simulationsAnalysis/xml/analysisGizmo/H3N2-v0_46-analyzeSimData-template-gizmo.xml
+ 	 			
  	To make different completion rate by thinning HI data: 
- 		- /Users/charles/Documents/research/antigenic/GenoPheno/antigenic-clustering/code/analysisScripts/pythonScripts_2_7/H3N2_thinHI_data-2-18-2015.py
+ 		-  ~/Documents/research/antigenic/GenoPheno/antigenic-clustering/dev/code/analysisScripts/pythonScripts_2_7/H3N2_thinHI_data-2-18-2015.py
  	To simulate data:
 		/Users/charles/Documents/research/antigenic/GenoPheno/antigenic-clustering/code/xml/simulations/simulation
 	To analyze the simulated data:
@@ -339,3 +356,14 @@ sbatch --time=10-0 --wrap="java -jar ~/clustering/software/beast_v0_46-simulateV
 
 
 
+
+
+Deleted:
+	/Users/charles/Documents/researchData/gizmoBackup/output
+	/Users/charles/Documents/researchData/clustering/testRuns
+	/Users/charles/Documents/researchData/clustering/forManuscript-backupVersion
+	
+	these folders are backed up in /Volumes/exFAT-drive/transferDataFromMacToDrive-8-26-2015/
+	
+	
+	
